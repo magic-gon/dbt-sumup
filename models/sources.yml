@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw_data
+    tables:
+      - name: channels
+        description: "Tabla con información de canales"
+      - name: leads_funnel
+        description: "Tabla con información de embudos de leads"
+      - name: web_orders
+        description: "Tabla con información de órdenes web"

@@ -1,48 +1,46 @@
 name: dbt_sumup
-version: 2
-profile: dbt-sumup
 
-source-paths: ["models"]
+model-paths: ["models"]  # Cambié 'source-paths' a 'model-paths'
 analysis-paths: ["analysis"]
 test-paths: ["tests"]
 target-path: "target"
 clean-targets: ["target"]
 log-path: "logs"
-modules-path: "dbt_modules"
-profiles.yml: "profiles.yml"
+seed-paths: ["data"]  # Cambié 'data-paths' a 'seed-paths'
 project-root: "."
-data-paths: ["data"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
+profile: dbt_sumup
+
 # Configuración de los modelos
 models:
-  dbt-sumup:
+  dbt_sumup:
     raw_data:
       enabled: true
       materialized: view
       schema: raw_data
-      database: dbt-sumup
+      database: dbt_sumup
       quoting:
         identifier: true
     analysis:
       enabled: true
       materialized: view
       schema: analysis
-      database: dbt-sumup
+      database: dbt_sumup
       quoting:
         identifier: true
     staging:
       enabled: true
       materialized: view
       schema: staging
-      database: dbt-sumup
+      database: dbt_sumup
       quoting:
         identifier: true
     mart:
       enabled: true
       materialized: view
       schema: mart
-      database: dbt-sumup
+      database: dbt_sumup
       quoting:
         identifier: true

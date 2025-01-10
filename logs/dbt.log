@@ -87,3 +87,314 @@ Error encountered in C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\db
 [0m18:14:53.121621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E333504A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3335071D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E33C3CB250>]}
 [0m18:14:53.122621 [debug] [MainThread]: Flushing usage events
 [0m18:14:53.573800 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:21:43.360944 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5A3811290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5A3811610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5A38113D0>]}
+
+
+============================== 18:21:43.368968 | dd9b9ad3-0f31-44f8-897d-ae2f7b306faa ==============================
+[0m18:21:43.368968 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:21:43.370947 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt_sumup\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m18:21:43.375945 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'dbt-sumup'
+[0m18:21:43.377493 [debug] [MainThread]: Command `dbt run` failed at 18:21:43.377493 after 0.14 seconds
+[0m18:21:43.378670 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5A35FBD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5A38069D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5A3807850>]}
+[0m18:21:43.378670 [debug] [MainThread]: Flushing usage events
+[0m18:21:44.090172 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:22:57.290389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001166665D2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011666613610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011666610150>]}
+
+
+============================== 18:22:57.304390 | 6592748b-a31f-4576-98f3-fddb70806a9b ==============================
+[0m18:22:57.304390 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:22:57.311904 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt_sumup\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:23:00.553724 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m18:23:00.555721 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '6592748b-a31f-4576-98f3-fddb70806a9b', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001166FFAAD90>]}
+[0m18:23:00.556721 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m18:23:00.557723 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '6592748b-a31f-4576-98f3-fddb70806a9b', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001166FFAAD90>]}
+[0m18:23:00.741927 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path []: Additional properties are not allowed ('modules-path', 'profiles.yml' were unexpected)
+
+Error encountered in C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\dbt_project.yml
+[0m18:23:00.746476 [debug] [MainThread]: Command `dbt run` failed at 18:23:00.745990 after 3.67 seconds
+[0m18:23:00.747970 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000116663FBBD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001166FFF04D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011666222BD0>]}
+[0m18:23:00.749644 [debug] [MainThread]: Flushing usage events
+[0m18:23:01.223023 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:24:20.255385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DF3CD115D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DF3C922F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DF3CD05D90>]}
+
+
+============================== 18:24:20.269386 | 8fdbe2e4-afe2-4eeb-bc25-0f21d2cc63f8 ==============================
+[0m18:24:20.269386 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:24:20.272386 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt_sumup\\logs', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:24:21.970049 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m18:24:21.972051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '8fdbe2e4-afe2-4eeb-bc25-0f21d2cc63f8', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DF467964D0>]}
+[0m18:24:21.973064 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m18:24:21.975050 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '8fdbe2e4-afe2-4eeb-bc25-0f21d2cc63f8', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DF3CD05410>]}
+[0m18:24:22.165051 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['version']: '2' is not valid under any of the given schemas
+
+Error encountered in C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\dbt_project.yml
+[0m18:24:22.169050 [debug] [MainThread]: Command `dbt run` failed at 18:24:22.169050 after 2.05 seconds
+[0m18:24:22.170050 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DF3CD5E910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DF3CD69C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DF3C80EB10>]}
+[0m18:24:22.171049 [debug] [MainThread]: Flushing usage events
+[0m18:24:22.646411 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:25:11.045873 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025EBF805C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025EBF807390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025EBF8049D0>]}
+
+
+============================== 18:25:11.053897 | 434d2bbf-1d6d-4d3c-953c-56b2bc483a69 ==============================
+[0m18:25:11.053897 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:25:11.054875 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt_sumup\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:25:11.057875 [error] [MainThread]: Encountered an error:
+Runtime Error
+  dbt cannot run because no profile was specified for this dbt project.
+  To specify a profile for this project, add a line like the this to
+  your dbt_project.yml file:
+  
+  profile: [profile name]
+  
+  Here, [profile name] should be replaced with a profile name
+  defined in your profiles.yml file. You can find profiles.yml here:
+  
+  C:\Users\Lenovo\.dbt/profiles.yml
+  
+[0m18:25:11.059876 [debug] [MainThread]: Command `dbt run` failed at 18:25:11.059876 after 0.14 seconds
+[0m18:25:11.060875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025EBF422BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025EBF8056D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025EBA0A93D0>]}
+[0m18:25:11.061875 [debug] [MainThread]: Flushing usage events
+[0m18:25:11.488875 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:28:01.727612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000275A4905950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000275A4906610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000275A4906950>]}
+
+
+============================== 18:28:01.736616 | c372bd7e-0984-4621-a6c0-7b87c575c2db ==============================
+[0m18:28:01.736616 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:28:01.738614 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt_sumup\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m18:28:03.346286 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['version']: '2' is not valid under any of the given schemas
+
+Error encountered in C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\dbt_project.yml
+[0m18:28:03.349284 [debug] [MainThread]: Command `dbt run` failed at 18:28:03.348286 after 1.74 seconds
+[0m18:28:03.349284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000275A4968290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000275A4968110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000275A4522BD0>]}
+[0m18:28:03.350289 [debug] [MainThread]: Flushing usage events
+[0m18:28:03.779967 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:28:40.363969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000138DBD113D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000138DBD10D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000138DBD07B50>]}
+
+
+============================== 18:28:40.372974 | 01ae78e0-9217-4759-ae8e-1f109089aaa3 ==============================
+[0m18:28:40.372974 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:28:40.374972 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt_sumup\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:28:42.120677 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['version']: '1' is not valid under any of the given schemas
+
+Error encountered in C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\dbt_project.yml
+[0m18:28:42.124680 [debug] [MainThread]: Command `dbt run` failed at 18:28:42.124680 after 1.89 seconds
+[0m18:28:42.125682 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000138DBD5D0D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000138DBCFBC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000138DBD070D0>]}
+[0m18:28:42.126680 [debug] [MainThread]: Flushing usage events
+[0m18:28:42.540814 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:29:34.161114 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205D5706150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205D5707E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205D5704CD0>]}
+
+
+============================== 18:29:34.168115 | 55e2db9b-5307-4648-985c-e865bd9f7eff ==============================
+[0m18:29:34.168115 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:29:34.170096 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt_sumup\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:29:35.885264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '55e2db9b-5307-4648-985c-e865bd9f7eff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205DF176A50>]}
+[0m18:29:35.969284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '55e2db9b-5307-4648-985c-e865bd9f7eff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205D15CA050>]}
+[0m18:29:35.970284 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m18:29:36.665215 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m18:29:36.667215 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:29:36.669214 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '55e2db9b-5307-4648-985c-e865bd9f7eff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205DF202BD0>]}
+[0m18:29:41.085443 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.dbt_sumup.stg_channels' (models\staging\stg_channels.sql) depends on a source named 'raw_data.channels' which was not found
+[0m18:29:41.088451 [debug] [MainThread]: Command `dbt run` failed at 18:29:41.087451 after 7.04 seconds
+[0m18:29:41.088451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205D575D9D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205D56FBB90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205D5769B50>]}
+[0m18:29:41.089448 [debug] [MainThread]: Flushing usage events
+[0m18:29:41.525208 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:39:46.636811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025561D12ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025561D5D690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002555FBC0D90>]}
+
+
+============================== 18:39:46.649398 | 69552762-ee99-4d72-b534-4931bd0fab16 ==============================
+[0m18:39:46.649398 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:39:46.651129 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt_sumup\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:39:48.537310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '69552762-ee99-4d72-b534-4931bd0fab16', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025561D44890>]}
+[0m18:39:48.624290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '69552762-ee99-4d72-b534-4931bd0fab16', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002555DAC9C90>]}
+[0m18:39:48.626291 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m18:39:49.399462 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m18:39:49.401445 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:39:49.402444 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '69552762-ee99-4d72-b534-4931bd0fab16', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002556B3B7E90>]}
+[0m18:39:51.431078 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 7 unused configuration paths:
+- models.dbt_sumup.analysis
+- models.dbt_sumup.analysis.quoting
+- models.dbt_sumup.staging.quoting
+- models.dbt_sumup.mart.quoting
+- models.dbt_sumup.mart
+- models.dbt_sumup.raw_data
+- models.dbt_sumup.raw_data.quoting
+[0m18:39:51.452097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '69552762-ee99-4d72-b534-4931bd0fab16', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002556C082FD0>]}
+[0m18:39:51.582075 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\target\manifest.json
+[0m18:39:51.590077 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\target\semantic_manifest.json
+[0m18:39:51.964954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '69552762-ee99-4d72-b534-4931bd0fab16', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002556C41D990>]}
+[0m18:39:51.965978 [info ] [MainThread]: Found 3 models, 3 sources, 489 macros
+[0m18:39:51.966955 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '69552762-ee99-4d72-b534-4931bd0fab16', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002556C402D10>]}
+[0m18:39:51.969965 [info ] [MainThread]: 
+[0m18:39:51.971955 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:39:51.973960 [info ] [MainThread]: 
+[0m18:39:51.974954 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:39:51.984978 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt_sumup'
+[0m18:39:51.985971 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:39:51.986971 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt-analytics-service-account.json''
+[0m18:39:51.988972 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:39:51.990973 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt-analytics-service-account.json''
+[0m18:39:51.992971 [info ] [MainThread]: 
+[0m18:39:51.994973 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.02 seconds (0.02s).
+[0m18:39:51.998975 [error] [MainThread]: Encountered an error:
+Database Error
+  [Errno 2] No such file or directory: 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt-analytics-service-account.json'
+[0m18:39:52.004974 [debug] [MainThread]: Command `dbt run` failed at 18:39:52.004974 after 5.51 seconds
+[0m18:39:52.006973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025561D07850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025561D68110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025561922BD0>]}
+[0m18:39:52.007972 [debug] [MainThread]: Flushing usage events
+[0m18:39:52.482458 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:42:43.960031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024227F113D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024227F07890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024227F06510>]}
+
+
+============================== 18:42:43.973030 | 55f648f1-d5d5-4231-804d-a127be545fce ==============================
+[0m18:42:43.973030 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:42:43.975033 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt_sumup\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m18:42:45.832650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '55f648f1-d5d5-4231-804d-a127be545fce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024227F94590>]}
+[0m18:42:45.937661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '55f648f1-d5d5-4231-804d-a127be545fce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242268B8550>]}
+[0m18:42:45.940663 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m18:42:47.438662 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m18:42:47.934802 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:42:47.935800 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:42:47.943800 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 7 unused configuration paths:
+- models.dbt_sumup.raw_data
+- models.dbt_sumup.raw_data.quoting
+- models.dbt_sumup.analysis.quoting
+- models.dbt_sumup.analysis
+- models.dbt_sumup.mart.quoting
+- models.dbt_sumup.mart
+- models.dbt_sumup.staging.quoting
+[0m18:42:48.103802 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '55f648f1-d5d5-4231-804d-a127be545fce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024230D17390>]}
+[0m18:42:48.786803 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\target\manifest.json
+[0m18:42:48.806805 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\target\semantic_manifest.json
+[0m18:42:49.019803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '55f648f1-d5d5-4231-804d-a127be545fce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024231F38190>]}
+[0m18:42:49.023804 [info ] [MainThread]: Found 3 models, 3 sources, 489 macros
+[0m18:42:49.031805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '55f648f1-d5d5-4231-804d-a127be545fce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024226950C90>]}
+[0m18:42:49.044806 [info ] [MainThread]: 
+[0m18:42:49.052806 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:42:49.055804 [info ] [MainThread]: 
+[0m18:42:49.089804 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:42:49.124808 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt_sumup'
+[0m18:42:49.142803 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:42:49.148804 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt-analytics-service-account.json''
+[0m18:42:49.154804 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:42:49.156804 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt-analytics-service-account.json''
+[0m18:42:49.159806 [info ] [MainThread]: 
+[0m18:42:49.176804 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.09 seconds (0.09s).
+[0m18:42:49.185802 [error] [MainThread]: Encountered an error:
+Database Error
+  [Errno 2] No such file or directory: 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt-analytics-service-account.json'
+[0m18:42:49.190804 [debug] [MainThread]: Command `dbt run` failed at 18:42:49.190804 after 5.39 seconds
+[0m18:42:49.192803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024227F68390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024227EFBA50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024227F5D150>]}
+[0m18:42:49.195805 [debug] [MainThread]: Flushing usage events
+[0m18:42:49.780804 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:44:58.894368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB5C605C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB5C607090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB5C607750>]}
+
+
+============================== 18:44:58.905370 | 65e354ac-5c33-472d-bd7e-76bfe1eb631d ==============================
+[0m18:44:58.905370 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:44:58.907370 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'log_path': 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt_sumup\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m18:45:00.717749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '65e354ac-5c33-472d-bd7e-76bfe1eb631d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB5B25F650>]}
+[0m18:45:00.805757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '65e354ac-5c33-472d-bd7e-76bfe1eb631d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB583C9F50>]}
+[0m18:45:00.807754 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m18:45:01.517201 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m18:45:01.730535 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:45:01.731535 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:45:01.739536 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 7 unused configuration paths:
+- models.dbt_sumup.raw_data
+- models.dbt_sumup.staging.quoting
+- models.dbt_sumup.mart.quoting
+- models.dbt_sumup.analysis
+- models.dbt_sumup.mart
+- models.dbt_sumup.analysis.quoting
+- models.dbt_sumup.raw_data.quoting
+[0m18:45:01.788532 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '65e354ac-5c33-472d-bd7e-76bfe1eb631d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB5C6441D0>]}
+[0m18:45:01.976538 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\target\manifest.json
+[0m18:45:01.982534 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\target\semantic_manifest.json
+[0m18:45:02.011536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '65e354ac-5c33-472d-bd7e-76bfe1eb631d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB6653D450>]}
+[0m18:45:02.012537 [info ] [MainThread]: Found 3 models, 3 sources, 489 macros
+[0m18:45:02.014536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '65e354ac-5c33-472d-bd7e-76bfe1eb631d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB6692F110>]}
+[0m18:45:02.017532 [info ] [MainThread]: 
+[0m18:45:02.018535 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:45:02.019536 [info ] [MainThread]: 
+[0m18:45:02.022537 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:45:02.033535 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt_sumup'
+[0m18:45:02.034536 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:45:02.035535 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: 'C:\\\\Users\\\\Lenovo\\\\Documents\\\\Gonza\\\\Trabajo\\\\Ejercicios\\\\SumUp\\\\dbt-analytics-service-account.json''
+[0m18:45:02.036537 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:45:02.036537 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: 'C:\\\\Users\\\\Lenovo\\\\Documents\\\\Gonza\\\\Trabajo\\\\Ejercicios\\\\SumUp\\\\dbt-analytics-service-account.json''
+[0m18:45:02.037537 [info ] [MainThread]: 
+[0m18:45:02.039537 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.02 seconds (0.02s).
+[0m18:45:02.045536 [error] [MainThread]: Encountered an error:
+Database Error
+  [Errno 2] No such file or directory: 'C:\\\\Users\\\\Lenovo\\\\Documents\\\\Gonza\\\\Trabajo\\\\Ejercicios\\\\SumUp\\\\dbt-analytics-service-account.json'
+[0m18:45:02.050539 [debug] [MainThread]: Command `dbt run` failed at 18:45:02.050539 after 3.30 seconds
+[0m18:45:02.051538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB5C668290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB5C668110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB5C2231D0>]}
+[0m18:45:02.051538 [debug] [MainThread]: Flushing usage events
+[0m18:45:02.513908 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:45:20.899526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A509706050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5097067D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A509706BD0>]}
+
+
+============================== 18:45:20.909525 | 99571e10-e156-412a-a4b0-ef50647fb0de ==============================
+[0m18:45:20.909525 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:45:20.911527 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt_sumup\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:45:22.777517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '99571e10-e156-412a-a4b0-ef50647fb0de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A509794050>]}
+[0m18:45:22.867516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '99571e10-e156-412a-a4b0-ef50647fb0de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5054C8710>]}
+[0m18:45:22.868520 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m18:45:23.590685 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m18:45:23.885681 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:45:23.886680 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:45:23.902681 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 7 unused configuration paths:
+- models.dbt_sumup.analysis.quoting
+- models.dbt_sumup.raw_data
+- models.dbt_sumup.staging.quoting
+- models.dbt_sumup.mart
+- models.dbt_sumup.mart.quoting
+- models.dbt_sumup.raw_data.quoting
+- models.dbt_sumup.analysis
+[0m18:45:24.016682 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '99571e10-e156-412a-a4b0-ef50647fb0de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A51241F390>]}
+[0m18:45:24.214680 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\target\manifest.json
+[0m18:45:24.220678 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\target\semantic_manifest.json
+[0m18:45:24.251680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '99571e10-e156-412a-a4b0-ef50647fb0de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5130D1110>]}
+[0m18:45:24.252681 [info ] [MainThread]: Found 3 models, 3 sources, 489 macros
+[0m18:45:24.254680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '99571e10-e156-412a-a4b0-ef50647fb0de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A513773350>]}
+[0m18:45:24.257680 [info ] [MainThread]: 
+[0m18:45:24.258678 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:45:24.260680 [info ] [MainThread]: 
+[0m18:45:24.261681 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:45:24.267676 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt_sumup'
+[0m18:45:24.268679 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:45:24.270683 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: 'C:\\\\Users\\\\Lenovo\\\\Documents\\\\Gonza\\\\Trabajo\\\\Ejercicios\\\\SumUp\\\\dbt-analytics-service-account.json''
+[0m18:45:24.271680 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:45:24.272679 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: 'C:\\\\Users\\\\Lenovo\\\\Documents\\\\Gonza\\\\Trabajo\\\\Ejercicios\\\\SumUp\\\\dbt-analytics-service-account.json''
+[0m18:45:24.273704 [info ] [MainThread]: 
+[0m18:45:24.275681 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.01 seconds (0.01s).
+[0m18:45:24.280691 [error] [MainThread]: Encountered an error:
+Database Error
+  [Errno 2] No such file or directory: 'C:\\\\Users\\\\Lenovo\\\\Documents\\\\Gonza\\\\Trabajo\\\\Ejercicios\\\\SumUp\\\\dbt-analytics-service-account.json'
+[0m18:45:24.284137 [debug] [MainThread]: Command `dbt run` failed at 18:45:24.284137 after 3.53 seconds
+[0m18:45:24.285135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5096FB7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A509706710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A509704710>]}
+[0m18:45:24.287159 [debug] [MainThread]: Flushing usage events
+[0m18:45:24.717830 [debug] [MainThread]: An error was encountered while trying to flush usage events
