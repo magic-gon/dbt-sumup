@@ -5,12 +5,12 @@ version: 1.0
 
 config-version: 2
 
-source-paths: ["models"]
+model-paths: ["models"]
 target-path: "target"
 clean-targets: ["target"]
 
 models:
-  pos_lite_project:
+  dbt_sumup:
     raw_data:
       +materialized: view
     staging:
