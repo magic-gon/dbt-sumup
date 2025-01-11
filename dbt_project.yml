@@ -1,46 +1,19 @@
 name: dbt_sumup
-
-model-paths: ["models"]  # Cambié 'source-paths' a 'model-paths'
-analysis-paths: ["analysis"]
-test-paths: ["tests"]
-target-path: "target"
-clean-targets: ["target"]
-log-path: "logs"
-seed-paths: ["data"]  # Cambié 'data-paths' a 'seed-paths'
-project-root: "."
-macro-paths: ["macros"]
-snapshot-paths: ["snapshots"]
-
 profile: dbt_sumup
 
-# Configuración de los modelos
+version: 1.0
+
+config-version: 2
+
+source-paths: ["models"]
+target-path: "target"
+clean-targets: ["target"]
+
 models:
-  dbt_sumup:
+  pos_lite_project:
     raw_data:
-      enabled: true
-      materialized: view
-      schema: raw_data
-      database: dbt_sumup
-      quoting:
-        identifier: true
-    analysis:
-      enabled: true
-      materialized: view
-      schema: analysis
-      database: dbt_sumup
-      quoting:
-        identifier: true
+      +materialized: view
     staging:
-      enabled: true
-      materialized: view
-      schema: staging
-      database: dbt_sumup
-      quoting:
-        identifier: true
+      +materialized: view
     mart:
-      enabled: true
-      materialized: view
-      schema: mart
-      database: dbt_sumup
-      quoting:
-        identifier: true
+      +materialized: table
