@@ -894,3 +894,18 @@ Database Error
 [0m19:08:21.590270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCC96040D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCC9605B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCC3EA93D0>]}
 [0m19:08:21.591271 [debug] [MainThread]: Flushing usage events
 [0m19:08:22.072196 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:43:30.822229 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249AC1073D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249AC135090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249AC136B50>]}
+
+
+============================== 12:43:30.852087 | 7d81cd41-7e0b-404d-bdbd-1e48b9dd2a81 ==============================
+[0m12:43:30.852087 [info ] [MainThread]: Running with dbt=1.9.1
+[0m12:43:30.854146 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt_sumup\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt clean', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:43:30.865710 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m12:43:30.868330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '7d81cd41-7e0b-404d-bdbd-1e48b9dd2a81', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249AC1369D0>]}
+[0m12:43:31.086489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7d81cd41-7e0b-404d-bdbd-1e48b9dd2a81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249AC15DA90>]}
+[0m12:43:31.386038 [debug] [MainThread]: Command `dbt clean` succeeded at 12:43:31.386038 after 0.73 seconds
+[0m12:43:31.388036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249AC0FBAD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249AC1762D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249AC177FD0>]}
+[0m12:43:31.390037 [debug] [MainThread]: Flushing usage events
+[0m12:43:31.851278 [debug] [MainThread]: An error was encountered while trying to flush usage events
