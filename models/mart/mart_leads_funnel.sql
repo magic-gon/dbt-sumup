@@ -27,7 +27,7 @@ WITH lead_metrics AS (
         SAFE_DIVIDE(total_signed_leads, total_meeting_done) * 100 AS conversion_rate_signed_leads,
                 
         -- Tasa de conversión de acuerdos firmados a deals for POS Lite
-        SAFE_DIVIDE(total_pos_litte_deals, total_signed_leads) * 100 AS conversion_rate_pos_deals,
+        SAFE_DIVIDE(total_pos_lite_deals, total_signed_leads) * 100 AS conversion_rate_pos_deals,
         
         -- Tasa de conversión de leads a deals finales
         SAFE_DIVIDE(total_pos_lite_deals, total_leads) * 100 AS conversion_rate_deals,
@@ -40,7 +40,7 @@ WITH lead_metrics AS (
 
         -- Click Through Rate (CTR)
         SAFE_DIVIDE(total_clicks, total_impressions) * 100 AS ctr
-    FROM {{ ref('stg_leads_funnel.sql') }}
+    FROM {{ ref('stg_leads_funnel') }}
 )
 
 SELECT * FROM lead_metrics

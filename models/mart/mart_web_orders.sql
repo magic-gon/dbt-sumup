@@ -3,10 +3,9 @@ WITH web_order_metrics AS (
         wo.activity_date,
         wo.country_code,
         wo.campaign_id,
-        wo.product,
-        wo.channel_level_3,
-        wo.channel_level_4,
-        wo.channel_level_5,
+        ch.channel_level_3,
+        ch.channel_level_4,
+        ch.channel_level_5,
         wo.nb_of_sessions,
         wo.nb_of_signups,
         wo.nb_of_orders,
@@ -20,6 +19,7 @@ WITH web_order_metrics AS (
         -- Costo por orden
         SAFE_DIVIDE(wo.total_spend_eur, wo.nb_of_orders) AS cost_per_order
     FROM {{ ref('stg_web_orders') }} wo
+    LEFT JOIN {{ ref('stg_channels') }} ch
+      ON wo.campaign_id = ch.campaign_id
 )
-
 SELECT * FROM web_order_metrics
