@@ -1,12 +1,14 @@
 WITH combined_metrics AS (
     SELECT
-        wo.activity_date,
-        wo.country_code,
-        wo.campaign_id,
-        wo.product,
-        wo.channel_level_3,
-        wo.channel_level_4,
-        wo.channel_level_5,
+        COALESCE(wo.activity_date, lf.activity_date) AS activity_date,
+        COALESCE(wo.country_code, lf.country_code) AS country_code,
+        COALESCE(wo.campaign_id, lf.campaign_id) AS campaign_id,
+        COALESCE(wo.product, lf.product) AS product,
+        COALESCE(wo.channel_level_3, lf.channel_level_3) AS channel_level_3,
+        COALESCE(wo.channel_level_4, lf.channel_level_4) AS channel_level_4,
+        COALESCE(wo.channel_level_5, lf.channel_level_5) AS channel_level_5,
+        
+        -- Web order metrics
         wo.nb_of_sessions,
         wo.nb_of_signups,
         wo.nb_of_orders,
@@ -16,6 +18,7 @@ WITH combined_metrics AS (
         wo.ctr AS web_order_ctr,
         wo.cost_per_order,
         
+        -- Lead funnel metrics
         lf.total_leads,
         lf.total_sqls,
         lf.total_meeting_done,
@@ -31,7 +34,7 @@ WITH combined_metrics AS (
         lf.cost_per_deal,
         lf.ctr AS lead_ctr
     FROM {{ ref('mart_web_orders') }} wo
-    LEFT JOIN {{ ref('mart_leads_funnel') }} lf
+    FULL OUTER JOIN {{ ref('mart_leads_funnel') }} lf
       ON wo.activity_date = lf.activity_date
      AND wo.country_code = lf.country_code
      AND wo.campaign_id = lf.campaign_id
