@@ -31,7 +31,7 @@ WITH kpi_calculations AS (
         
         -- Retorno sobre la inversión (ROI)
         SAFE_DIVIDE(total_pos_lite_deals * 100, total_spend_eur) AS roi
-    FROM {{ ref('fct_pos_lite_funnel') }}
+    FROM `dbt-analytics-392621`.`pos_lite_dbt`.`fct_pos_lite_funnel`
 )
 
 SELECT * FROM kpi_calculations

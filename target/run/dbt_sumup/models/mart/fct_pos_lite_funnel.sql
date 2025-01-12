@@ -1,4 +1,15 @@
-WITH joined_data AS (
+
+  
+    
+
+    create or replace table `dbt-analytics-392621`.`pos_lite_dbt`.`fct_pos_lite_funnel`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH joined_data AS (
     SELECT
         wo.activity_date,
         wo.country_code,
@@ -14,12 +25,14 @@ WITH joined_data AS (
         wo.nb_of_orders,
         wo.nb_of_sessions,
         wo.total_spend_eur
-    FROM {{ ref('stg_web_orders') }} wo
-    LEFT JOIN {{ ref('stg_channels') }} ch
+    FROM `dbt-analytics-392621`.`pos_lite_dbt`.`stg_web_orders` wo
+    LEFT JOIN `dbt-analytics-392621`.`pos_lite_dbt`.`stg_channels` ch
       ON wo.campaign_id = ch.campaign_id
-    LEFT JOIN {{ ref('stg_leads_funnel') }} lf
+    LEFT JOIN `dbt-analytics-392621`.`pos_lite_dbt`.`stg_leads_funnel` lf
       ON wo.campaign_id = lf.campaign_id
      AND wo.activity_date = lf.lead_activity_date
 )
 
 SELECT * FROM joined_data
+    );
+  
