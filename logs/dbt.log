@@ -1812,3 +1812,86 @@ SELECT * FROM kpi_calculations
 [0m13:56:46.968285 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A056744D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A05676690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229FFD500D0>]}
 [0m13:56:46.969282 [debug] [MainThread]: Flushing usage events
 [0m13:56:47.500924 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:35:24.934860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000192142071D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019214232150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019214205C50>]}
+
+
+============================== 13:35:24.956859 | 5583f997-69e6-4082-9904-4da010791882 ==============================
+[0m13:35:24.956859 [info ] [MainThread]: Running with dbt=1.9.1
+[0m13:35:24.958861 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt_sumup\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m13:35:39.461050 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5583f997-69e6-4082-9904-4da010791882', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019212E52B90>]}
+[0m13:35:39.545073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5583f997-69e6-4082-9904-4da010791882', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000192100CA310>]}
+[0m13:35:39.547049 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m13:35:40.472756 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m13:35:43.046883 [debug] [MainThread]: Partial parsing enabled: 2 files deleted, 3 files added, 1 files changed.
+[0m13:35:43.048401 [debug] [MainThread]: Partial parsing: added file: dbt_sumup://models\mart\mart_web_orders.sql
+[0m13:35:43.049592 [debug] [MainThread]: Partial parsing: added file: dbt_sumup://models\mart\mart_leads_funnel.sql
+[0m13:35:43.051036 [debug] [MainThread]: Partial parsing: added file: dbt_sumup://models\mart\mart_combined_analysis.sql
+[0m13:35:43.052094 [debug] [MainThread]: Partial parsing: deleted file: dbt_sumup://models\mart\kpi_pos_lite.sql
+[0m13:35:43.053157 [debug] [MainThread]: Partial parsing: deleted file: dbt_sumup://models\mart\fct_pos_lite_funnel.sql
+[0m13:35:43.054676 [debug] [MainThread]: Partial parsing: updated file: dbt_sumup://models\staging\stg_leads_funnel.sql
+[0m13:35:43.710277 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.dbt_sumup.mart_leads_funnel' (models\mart\mart_leads_funnel.sql) depends on a node named 'stg_lead_funnels.sql' which was not found
+[0m13:35:43.713275 [debug] [MainThread]: Command `dbt run` failed at 13:35:43.713275 after 18.95 seconds
+[0m13:35:43.715275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019213FFBA50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001921425DC90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001921425E210>]}
+[0m13:35:43.716276 [debug] [MainThread]: Flushing usage events
+[0m13:35:44.224297 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:36:37.643421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EC6B906E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EC6B95BD50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EC6B95C610>]}
+
+
+============================== 13:36:37.651444 | f6755540-46ad-443d-8c36-9054ddb9989e ==============================
+[0m13:36:37.651444 [info ] [MainThread]: Running with dbt=1.9.1
+[0m13:36:37.653425 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt_sumup\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:36:39.689811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f6755540-46ad-443d-8c36-9054ddb9989e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EC7468A950>]}
+[0m13:36:39.774789 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f6755540-46ad-443d-8c36-9054ddb9989e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EC676CA050>]}
+[0m13:36:39.775787 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m13:36:40.501810 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m13:36:40.759787 [debug] [MainThread]: Partial parsing enabled: 2 files deleted, 3 files added, 1 files changed.
+[0m13:36:40.760787 [debug] [MainThread]: Partial parsing: added file: dbt_sumup://models\mart\mart_leads_funnel.sql
+[0m13:36:40.761789 [debug] [MainThread]: Partial parsing: added file: dbt_sumup://models\mart\mart_combined_analysis.sql
+[0m13:36:40.761789 [debug] [MainThread]: Partial parsing: added file: dbt_sumup://models\mart\mart_web_orders.sql
+[0m13:36:40.762789 [debug] [MainThread]: Partial parsing: deleted file: dbt_sumup://models\mart\fct_pos_lite_funnel.sql
+[0m13:36:40.763787 [debug] [MainThread]: Partial parsing: deleted file: dbt_sumup://models\mart\kpi_pos_lite.sql
+[0m13:36:40.764787 [debug] [MainThread]: Partial parsing: updated file: dbt_sumup://models\staging\stg_leads_funnel.sql
+[0m13:36:41.204152 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.dbt_sumup.mart_leads_funnel' (models\mart\mart_leads_funnel.sql) depends on a node named 'stg_leads_funnels.sql' which was not found
+[0m13:36:41.207296 [debug] [MainThread]: Command `dbt run` failed at 13:36:41.206758 after 3.71 seconds
+[0m13:36:41.208620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EC6B980690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EC6B905E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EC6B412BD0>]}
+[0m13:36:41.209161 [debug] [MainThread]: Flushing usage events
+[0m13:36:41.648400 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:37:10.891596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9AAF06E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9AAB1E790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9AAB1E690>]}
+
+
+============================== 13:37:10.900597 | 0e3c4afa-f761-491d-959e-f30a8d208667 ==============================
+[0m13:37:10.900597 [info ] [MainThread]: Running with dbt=1.9.1
+[0m13:37:10.902598 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt_sumup\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:37:12.742764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0e3c4afa-f761-491d-959e-f30a8d208667', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9B3CE9810>]}
+[0m13:37:12.822786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0e3c4afa-f761-491d-959e-f30a8d208667', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9A6DC89D0>]}
+[0m13:37:12.823767 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m13:37:13.511787 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m13:37:13.760765 [debug] [MainThread]: Partial parsing enabled: 2 files deleted, 3 files added, 1 files changed.
+[0m13:37:13.762766 [debug] [MainThread]: Partial parsing: added file: dbt_sumup://models\mart\mart_web_orders.sql
+[0m13:37:13.762766 [debug] [MainThread]: Partial parsing: added file: dbt_sumup://models\mart\mart_combined_analysis.sql
+[0m13:37:13.764765 [debug] [MainThread]: Partial parsing: added file: dbt_sumup://models\mart\mart_leads_funnel.sql
+[0m13:37:13.765765 [debug] [MainThread]: Partial parsing: deleted file: dbt_sumup://models\mart\kpi_pos_lite.sql
+[0m13:37:13.766766 [debug] [MainThread]: Partial parsing: deleted file: dbt_sumup://models\mart\fct_pos_lite_funnel.sql
+[0m13:37:13.768767 [debug] [MainThread]: Partial parsing: updated file: dbt_sumup://models\staging\stg_leads_funnel.sql
+[0m13:37:14.177763 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.dbt_sumup.mart_leads_funnel' (models\mart\mart_leads_funnel.sql) depends on a node named 'stg_leads_funnel.sql' which was not found
+[0m13:37:14.180768 [debug] [MainThread]: Command `dbt run` failed at 13:37:14.180768 after 3.42 seconds
+[0m13:37:14.181769 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9AAF5E2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9B4F7BCD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9AABF3A10>]}
+[0m13:37:14.182768 [debug] [MainThread]: Flushing usage events
+[0m13:37:14.620380 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:37:47.375754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E1D9F05C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E1D9F36590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E1D9F04410>]}
+
+
+============================== 13:37:47.383751 | 38f36c03-2d07-4e66-97d0-d35ea3cf8f93 ==============================
+[0m13:37:47.383751 [info ] [MainThread]: Running with dbt=1.9.1
+[0m13:37:47.385751 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt_sumup\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt clean', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:37:47.769755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '38f36c03-2d07-4e66-97d0-d35ea3cf8f93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E1D9FC8E10>]}
+[0m13:37:48.265755 [debug] [MainThread]: Command `dbt clean` succeeded at 13:37:48.265755 after 1.01 seconds
+[0m13:37:48.267758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E1D9EFBB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E1D9F76410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E1D9F77DD0>]}
+[0m13:37:48.269753 [debug] [MainThread]: Flushing usage events
+[0m13:37:48.713590 [debug] [MainThread]: An error was encountered while trying to flush usage events

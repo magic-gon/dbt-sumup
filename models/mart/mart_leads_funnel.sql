@@ -40,7 +40,7 @@ WITH lead_metrics AS (
 
         -- Click Through Rate (CTR)
         SAFE_DIVIDE(total_clicks, total_impressions) * 100 AS ctr
-    FROM {{ ref('stg_lead_funnels.sql') }}
+    FROM {{ ref('stg_leads_funnel.sql') }}
 )
 
 SELECT * FROM lead_metrics
