@@ -34,7 +34,7 @@
         lf.total_meeting_done,
         lf.total_signed_leads,
         lf.total_pos_lite_deals,
-        lf.product
+        lf.product,
         lf.total_spend AS lead_total_spend,
         lf.conversion_rate_sqls,
         lf.conversion_rate_meetings,
