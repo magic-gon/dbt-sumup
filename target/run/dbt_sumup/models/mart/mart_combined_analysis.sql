@@ -14,7 +14,6 @@
         COALESCE(wo.activity_date, lf.activity_date) AS activity_date,
         COALESCE(wo.country_code, lf.country_code) AS country_code,
         COALESCE(wo.campaign_id, lf.campaign_id) AS campaign_id,
-        COALESCE(lf.product) AS product,
         COALESCE(wo.channel_level_3, lf.channel_level_3) AS channel_level_3,
         COALESCE(wo.channel_level_4, lf.channel_level_4) AS channel_level_4,
         COALESCE(wo.channel_level_5, lf.channel_level_5) AS channel_level_5,
@@ -35,6 +34,7 @@
         lf.total_meeting_done,
         lf.total_signed_leads,
         lf.total_pos_lite_deals,
+        lf.product
         lf.total_spend AS lead_total_spend,
         lf.conversion_rate_sqls,
         lf.conversion_rate_meetings,
