@@ -28,25 +28,25 @@
         total_impressions,
         total_clicks,
         
-        -- Tasa de conversión de leads a SQLs
+        -- Conversion rate from leads to SQLs
         SAFE_DIVIDE(total_sqls, total_leads) * 100 AS conversion_rate_sqls,
         
-        -- Tasa de conversión de SQLs a reuniones
+        -- Conversion rate from SQLs to meetings
         SAFE_DIVIDE(total_meeting_done, total_sqls) * 100 AS conversion_rate_meetings,
         
-        -- Tasa de conversión de reuniones a acuerdos firmados
+        -- Conversion rate from meetings to signed leads
         SAFE_DIVIDE(total_signed_leads, total_meeting_done) * 100 AS conversion_rate_signed_leads,
                 
-        -- Tasa de conversión de acuerdos firmados a deals for POS Lite
+        -- Conversion rate from leads to deals for POS Lite
         SAFE_DIVIDE(total_pos_lite_deals, total_signed_leads) * 100 AS conversion_rate_pos_deals,
         
-        -- Tasa de conversión de leads a deals finales
+        -- Conversion rate of leads to final deals
         SAFE_DIVIDE(total_pos_lite_deals, total_leads) * 100 AS conversion_rate_deals,
         
-        -- Costo por lead
+        -- Cost per lead
         SAFE_DIVIDE(total_spend, total_leads) AS cost_per_lead,
 
-        -- Costo por deal for POS Lite
+        -- Costo per POS deal
         SAFE_DIVIDE(total_spend, total_pos_lite_deals) AS cost_per_deal,
 
         -- Click Through Rate (CTR)

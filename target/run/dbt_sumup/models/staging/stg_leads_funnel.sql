@@ -11,15 +11,15 @@
         CHANNEL_3 AS channel_level_3,
         CHANNEL_4 AS channel_level_4,
         CHANNEL_5 AS channel_level_5,
-        TOTAL_IMPRESSIONS AS total_impressions,
-        TOTAL_CLICKS AS total_clicks,
-        TOTAL_SPEND AS total_spend,
-        TOTAL_LEADS AS total_leads,
-        TOTAL_FAKE_LEADS AS total_fake_leads,
-        TOTAL_SQLS AS total_sqls,
-        TOTAL_MEETING_DONE AS total_meeting_done,
-        TOTAL_SIGNED_LEADS AS total_signed_leads,
-        TOTAL_POS_LITE_DEALS AS total_pos_lite_deals
+        CAST(TOTAL_IMPRESSIONS AS INT64) AS total_impressions,
+        CAST(TOTAL_CLICKS AS INT64) AS total_clicks,
+        CAST(TOTAL_SPEND AS FLOAT64) AS total_spend,
+        CAST(TOTAL_LEADS AS INT64) AS total_leads,
+        CAST(TOTAL_FAKE_LEADS AS INT64) AS total_fake_leads,
+        CAST(TOTAL_SQLS AS INT64) AS total_sqls,
+        CAST(TOTAL_MEETING_DONE AS INT64) AS total_meeting_done,
+        CAST(TOTAL_SIGNED_LEADS AS INT64) AS total_signed_leads,
+        CAST(TOTAL_POS_LITE_DEALS AS INT64) AS total_pos_lite_deals
     FROM `dbt-analytics-392621`.`raw_data`.`leads_funnel`
 )
 

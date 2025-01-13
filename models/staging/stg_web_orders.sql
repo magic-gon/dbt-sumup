@@ -11,3 +11,5 @@ WITH cleaned_web_orders AS (
         CAST(NB_POSLITE_ITEMS_DISPATCHED AS INT64) AS nb_poslite_items_dispatched
     FROM {{ source('raw_data', 'web_orders') }}
 )
+
+SELECT * FROM cleaned_web_orders
