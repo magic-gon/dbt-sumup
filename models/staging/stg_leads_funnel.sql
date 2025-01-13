@@ -7,15 +7,15 @@ WITH cleaned_leads_funnel AS (
         CHANNEL_3 AS channel_level_3,
         CHANNEL_4 AS channel_level_4,
         CHANNEL_5 AS channel_level_5,
-        CAST(TOTAL_IMPRESSIONS AS INT64) AS total_impressions,
-        CAST(TOTAL_CLICKS AS INT64) AS total_clicks,
-        CAST(TOTAL_SPEND AS FLOAT64) AS total_spend,
-        CAST(TOTAL_LEADS AS INT64) AS total_leads,
-        CAST(TOTAL_FAKE_LEADS AS INT64) AS total_fake_leads,
-        CAST(TOTAL_SQLS AS INT64) AS total_sqls,
-        CAST(TOTAL_MEETING_DONE AS INT64) AS total_meeting_done,
-        CAST(TOTAL_SIGNED_LEADS AS INT64) AS total_signed_leads,
-        CAST(TOTAL_POS_LITE_DEALS AS INT64) AS total_pos_lite_deals
+        SAFE_CAST(TOTAL_IMPRESSIONS AS INT64) AS total_impressions,
+        SAFE_CAST(TOTAL_CLICKS AS INT64) AS total_clicks,
+        SAFE_CAST(TOTAL_SPEND AS FLOAT64) AS total_spend,
+        SAFE_CAST(TOTAL_LEADS AS INT64) AS total_leads,
+        SAFE_CAST(TOTAL_FAKE_LEADS AS INT64) AS total_fake_leads,
+        SAFE_CAST(TOTAL_SQLS AS INT64) AS total_sqls,
+        SAFE_CAST(TOTAL_MEETING_DONE AS INT64) AS total_meeting_done,
+        SAFE_CAST(TOTAL_SIGNED_LEADS AS INT64) AS total_signed_leads,
+        SAFE_CAST(TOTAL_POS_LITE_DEALS AS INT64) AS total_pos_lite_deals
     FROM {{ source('raw_data', 'leads_funnel') }}
 )
 
