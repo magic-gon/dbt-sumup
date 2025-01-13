@@ -16,7 +16,7 @@ WITH web_order_metrics AS (
         -- Click Through Rate (CTR)
         SAFE_DIVIDE(wo.nb_of_signups, wo.nb_of_sessions) * 100 AS ctr,
         
-        -- Costo por orden
+        -- Costo per order
         SAFE_DIVIDE(wo.total_spend_eur, wo.nb_of_orders) AS cost_per_order
     FROM {{ ref('stg_web_orders') }} wo
     LEFT JOIN {{ ref('stg_channels') }} ch
