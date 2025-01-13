@@ -3454,3 +3454,1012 @@ SELECT * FROM lead_metrics
 [0m16:22:53.203940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014DFECFBCD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014DFE9F3350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014DFE7D35D0>]}
 [0m16:22:53.204939 [debug] [MainThread]: Flushing usage events
 [0m16:22:53.714364 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:24:16.946987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F929C5D2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F92885DED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F929C5DDD0>]}
+
+
+============================== 16:24:16.959984 | 9f8c823e-3f28-4d0c-8aeb-abb8f66f4312 ==============================
+[0m16:24:16.959984 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:24:16.962984 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt_sumup\\logs', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:24:19.466691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9f8c823e-3f28-4d0c-8aeb-abb8f66f4312', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F93208C4D0>]}
+[0m16:24:19.640695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9f8c823e-3f28-4d0c-8aeb-abb8f66f4312', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F932AB5650>]}
+[0m16:24:19.642695 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m16:24:21.024220 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m16:24:21.696218 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m16:24:21.698220 [debug] [MainThread]: Partial parsing: updated file: dbt_sumup://models\staging\stg_web_orders.sql
+[0m16:24:22.955222 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_sumup.raw_data
+[0m16:24:23.061135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9f8c823e-3f28-4d0c-8aeb-abb8f66f4312', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F933C79250>]}
+[0m16:24:23.414929 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\target\manifest.json
+[0m16:24:23.423931 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\target\semantic_manifest.json
+[0m16:24:23.477933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9f8c823e-3f28-4d0c-8aeb-abb8f66f4312', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F933EA7AD0>]}
+[0m16:24:23.481932 [info ] [MainThread]: Found 6 models, 3 sources, 489 macros
+[0m16:24:23.485933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9f8c823e-3f28-4d0c-8aeb-abb8f66f4312', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F933FB25D0>]}
+[0m16:24:23.633933 [info ] [MainThread]: 
+[0m16:24:23.684935 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:24:23.736934 [info ] [MainThread]: 
+[0m16:24:23.822933 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:24:23.964932 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-analytics-392621'
+[0m16:24:23.966936 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:24:24.606482 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-analytics-392621_pos_lite_dbt'
+[0m16:24:24.607481 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:24:25.150068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9f8c823e-3f28-4d0c-8aeb-abb8f66f4312', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F933EA7850>]}
+[0m16:24:25.152067 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:24:25.212066 [debug] [Thread-1 (]: Began running node model.dbt_sumup.stg_channels
+[0m16:24:25.213065 [debug] [Thread-2 (]: Began running node model.dbt_sumup.stg_leads_funnel
+[0m16:24:25.215064 [debug] [Thread-3 (]: Began running node model.dbt_sumup.stg_web_orders
+[0m16:24:25.217067 [info ] [Thread-1 (]: 1 of 6 START sql view model pos_lite_dbt.stg_channels .......................... [RUN]
+[0m16:24:25.219066 [info ] [Thread-2 (]: 2 of 6 START sql view model pos_lite_dbt.stg_leads_funnel ...................... [RUN]
+[0m16:24:25.224069 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dbt_sumup.stg_channels'
+[0m16:24:25.221067 [info ] [Thread-3 (]: 3 of 6 START sql view model pos_lite_dbt.stg_web_orders ........................ [RUN]
+[0m16:24:25.226066 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.dbt_sumup.stg_leads_funnel'
+[0m16:24:25.228067 [debug] [Thread-1 (]: Began compiling node model.dbt_sumup.stg_channels
+[0m16:24:25.230069 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.dbt_sumup.stg_web_orders'
+[0m16:24:25.233069 [debug] [Thread-2 (]: Began compiling node model.dbt_sumup.stg_leads_funnel
+[0m16:24:25.257069 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_sumup.stg_channels"
+[0m16:24:25.261068 [debug] [Thread-3 (]: Began compiling node model.dbt_sumup.stg_web_orders
+[0m16:24:25.270064 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_sumup.stg_leads_funnel"
+[0m16:24:25.281067 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_sumup.stg_web_orders"
+[0m16:24:25.283067 [debug] [Thread-1 (]: Began executing node model.dbt_sumup.stg_channels
+[0m16:24:25.311066 [debug] [Thread-2 (]: Began executing node model.dbt_sumup.stg_leads_funnel
+[0m16:24:25.341067 [debug] [Thread-3 (]: Began executing node model.dbt_sumup.stg_web_orders
+[0m16:24:25.449066 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_sumup.stg_channels"
+[0m16:24:25.451066 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_sumup.stg_web_orders"
+[0m16:24:25.461067 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_sumup.stg_leads_funnel"
+[0m16:24:25.465067 [debug] [Thread-1 (]: On model.dbt_sumup.stg_channels: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_sumup", "target_name": "dev", "node_id": "model.dbt_sumup.stg_channels"} */
+
+
+  create or replace view `dbt-analytics-392621`.`pos_lite_dbt`.`stg_channels`
+  OPTIONS()
+  as WITH cleaned_channels AS (
+    SELECT
+        CAMPAIGN_ID AS campaign_id,
+        CAMPAIGN_NAME AS campaign_name,
+        CAMPAIGN_PERIOD_BUDGET_CATEGORY AS budget_category,
+        CHANNEL_3 AS channel_level_3,
+        CHANNEL_4 AS channel_level_4,
+        CHANNEL_5 AS channel_level_5
+    FROM `dbt-analytics-392621`.`raw_data`.`channels`
+)
+
+SELECT * FROM cleaned_channels;
+
+
+[0m16:24:25.468068 [debug] [Thread-3 (]: On model.dbt_sumup.stg_web_orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_sumup", "target_name": "dev", "node_id": "model.dbt_sumup.stg_web_orders"} */
+
+
+  create or replace view `dbt-analytics-392621`.`pos_lite_dbt`.`stg_web_orders`
+  OPTIONS()
+  as WITH cleaned_web_orders AS (
+    SELECT
+        DATE AS activity_date,
+        COUNTRY_CODE AS country_code,
+        CAMPAIGN_ID AS campaign_id,
+        CAST(TOTAL_SPEND_EUR AS FLOAT64) AS total_spend_eur,
+        CAST(NB_OF_SESSIONS AS INT64) AS nb_of_sessions,
+        CAST(NB_OF_SIGNUPS AS INT64) AS nb_of_signups,
+        CAST(NB_OF_ORDERS AS INT64) AS nb_of_orders,
+         CAST(NB_OF_POSLITE_ITEMS_ORDERED AS INT64) AS nb_of_poslite_items_ordered,
+        CAST(NB_POSLITE_ITEMS_DISPATCHED AS INT64) AS nb_poslite_items_dispatched
+    FROM `dbt-analytics-392621`.`raw_data`.`web_orders`
+)
+
+SELECT * FROM cleaned_web_orders;
+
+
+[0m16:24:25.470609 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:24:25.472806 [debug] [Thread-2 (]: On model.dbt_sumup.stg_leads_funnel: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_sumup", "target_name": "dev", "node_id": "model.dbt_sumup.stg_leads_funnel"} */
+
+
+  create or replace view `dbt-analytics-392621`.`pos_lite_dbt`.`stg_leads_funnel`
+  OPTIONS()
+  as WITH cleaned_leads_funnel AS (
+    SELECT
+        DATE AS lead_activity_date,
+        COUNTRY_CODE AS country_code,
+        CAMPAIGN_ID AS campaign_id,
+        PRODUCT AS product,
+        CHANNEL_3 AS channel_level_3,
+        CHANNEL_4 AS channel_level_4,
+        CHANNEL_5 AS channel_level_5,
+        CAST(TOTAL_IMPRESSIONS AS INT64) AS total_impressions,
+        CAST(TOTAL_CLICKS AS INT64) AS total_clicks,
+        CAST(TOTAL_SPEND AS FLOAT64) AS total_spend,
+        CAST(TOTAL_LEADS AS INT64) AS total_leads,
+        CAST(TOTAL_FAKE_LEADS AS INT64) AS total_fake_leads,
+        CAST(TOTAL_SQLS AS INT64) AS total_sqls,
+        CAST(TOTAL_MEETING_DONE AS INT64) AS total_meeting_done,
+        CAST(TOTAL_SIGNED_LEADS AS INT64) AS total_signed_leads,
+        CAST(TOTAL_POS_LITE_DEALS AS INT64) AS total_pos_lite_deals
+    FROM `dbt-analytics-392621`.`raw_data`.`leads_funnel`
+)
+
+SELECT * FROM cleaned_leads_funnel;
+
+
+[0m16:24:25.474447 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m16:24:25.573157 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:24:26.397682 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-analytics-392621&j=bq:US:567f66e2-31a7-4221-b8cd-6b3863a3d9e6&page=queryresults
+[0m16:24:26.428676 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-analytics-392621&j=bq:US:82a7d75d-adb7-46f0-b6c2-14b93d934359&page=queryresults
+[0m16:24:26.433677 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-analytics-392621&j=bq:US:328a2621-f345-45cf-8192-7c93a59b19eb&page=queryresults
+[0m16:24:27.046999 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9f8c823e-3f28-4d0c-8aeb-abb8f66f4312', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F933FE52D0>]}
+[0m16:24:27.048001 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9f8c823e-3f28-4d0c-8aeb-abb8f66f4312', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F933FF9290>]}
+[0m16:24:27.048001 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9f8c823e-3f28-4d0c-8aeb-abb8f66f4312', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F933F10890>]}
+[0m16:24:27.048996 [info ] [Thread-2 (]: 2 of 6 OK created sql view model pos_lite_dbt.stg_leads_funnel ................. [[32mCREATE VIEW (0 processed)[0m in 1.82s]
+[0m16:24:27.050999 [info ] [Thread-1 (]: 1 of 6 OK created sql view model pos_lite_dbt.stg_channels ..................... [[32mCREATE VIEW (0 processed)[0m in 1.82s]
+[0m16:24:27.054001 [debug] [Thread-2 (]: Finished running node model.dbt_sumup.stg_leads_funnel
+[0m16:24:27.051998 [info ] [Thread-3 (]: 3 of 6 OK created sql view model pos_lite_dbt.stg_web_orders ................... [[32mCREATE VIEW (0 processed)[0m in 1.82s]
+[0m16:24:27.055999 [debug] [Thread-1 (]: Finished running node model.dbt_sumup.stg_channels
+[0m16:24:27.057998 [debug] [Thread-4 (]: Began running node model.dbt_sumup.mart_leads_funnel
+[0m16:24:27.059001 [debug] [Thread-3 (]: Finished running node model.dbt_sumup.stg_web_orders
+[0m16:24:27.062000 [info ] [Thread-4 (]: 4 of 6 START sql table model pos_lite_dbt.mart_leads_funnel .................... [RUN]
+[0m16:24:27.063999 [debug] [Thread-2 (]: Began running node model.dbt_sumup.mart_web_orders
+[0m16:24:27.064999 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.dbt_sumup.mart_leads_funnel'
+[0m16:24:27.068002 [debug] [Thread-4 (]: Began compiling node model.dbt_sumup.mart_leads_funnel
+[0m16:24:27.066999 [info ] [Thread-2 (]: 5 of 6 START sql table model pos_lite_dbt.mart_web_orders ...................... [RUN]
+[0m16:24:27.074997 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_sumup.mart_leads_funnel"
+[0m16:24:27.077005 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_sumup.stg_leads_funnel, now model.dbt_sumup.mart_web_orders)
+[0m16:24:27.081005 [debug] [Thread-2 (]: Began compiling node model.dbt_sumup.mart_web_orders
+[0m16:24:27.081997 [debug] [Thread-4 (]: Began executing node model.dbt_sumup.mart_leads_funnel
+[0m16:24:27.086998 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_sumup.mart_web_orders"
+[0m16:24:27.107996 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m16:24:27.179998 [debug] [Thread-2 (]: Began executing node model.dbt_sumup.mart_web_orders
+[0m16:24:27.210999 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_sumup.mart_web_orders"
+[0m16:24:27.211998 [debug] [Thread-2 (]: On model.dbt_sumup.mart_web_orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_sumup", "target_name": "dev", "node_id": "model.dbt_sumup.mart_web_orders"} */
+
+  
+    
+
+    create or replace table `dbt-analytics-392621`.`pos_lite_dbt`.`mart_web_orders`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH web_order_metrics AS (
+    SELECT
+        wo.activity_date,
+        wo.country_code,
+        wo.campaign_id,
+        ch.channel_level_3,
+        ch.channel_level_4,
+        ch.channel_level_5,
+        wo.nb_of_sessions,
+        wo.nb_of_signups,
+        wo.nb_of_orders,
+        wo.nb_of_poslite_items_ordered,
+        wo.nb_poslite_items_dispatched,
+        wo.total_spend_eur,
+        
+        -- Click Through Rate (CTR)
+        SAFE_DIVIDE(wo.nb_of_signups, wo.nb_of_sessions) * 100 AS ctr,
+        
+        -- Costo per order
+        SAFE_DIVIDE(wo.total_spend_eur, wo.nb_of_orders) AS cost_per_order
+    FROM `dbt-analytics-392621`.`pos_lite_dbt`.`stg_web_orders` wo
+    LEFT JOIN `dbt-analytics-392621`.`pos_lite_dbt`.`stg_channels` ch
+      ON wo.campaign_id = ch.campaign_id
+)
+SELECT * FROM web_order_metrics
+    );
+  
+[0m16:24:27.213999 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m16:24:27.628041 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_sumup.mart_leads_funnel"
+[0m16:24:27.630044 [debug] [Thread-4 (]: On model.dbt_sumup.mart_leads_funnel: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_sumup", "target_name": "dev", "node_id": "model.dbt_sumup.mart_leads_funnel"} */
+
+  
+    
+
+    create or replace table `dbt-analytics-392621`.`pos_lite_dbt`.`mart_leads_funnel`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH lead_metrics AS (
+    SELECT
+        lead_activity_date AS activity_date,
+        country_code,
+        campaign_id,
+        product,
+        channel_level_3,
+        channel_level_4,
+        channel_level_5,
+        total_leads,
+        total_fake_leads,
+        total_sqls,
+        total_meeting_done,
+        total_signed_leads,
+        total_pos_lite_deals,
+        total_spend,
+        total_impressions,
+        total_clicks,
+        
+        -- Conversion rate from leads to SQLs
+        SAFE_DIVIDE(total_sqls, total_leads) * 100 AS conversion_rate_sqls,
+        
+        -- Conversion rate from SQLs to meetings
+        SAFE_DIVIDE(total_meeting_done, total_sqls) * 100 AS conversion_rate_meetings,
+        
+        -- Conversion rate from meetings to signed leads
+        SAFE_DIVIDE(total_signed_leads, total_meeting_done) * 100 AS conversion_rate_signed_leads,
+                
+        -- Conversion rate from leads to deals for POS Lite
+        SAFE_DIVIDE(total_pos_lite_deals, total_signed_leads) * 100 AS conversion_rate_pos_deals,
+        
+        -- Conversion rate of leads to final deals
+        SAFE_DIVIDE(total_pos_lite_deals, total_leads) * 100 AS conversion_rate_deals,
+        
+        -- Cost per lead
+        SAFE_DIVIDE(total_spend, total_leads) AS cost_per_lead,
+
+        -- Costo per POS deal
+        SAFE_DIVIDE(total_spend, total_pos_lite_deals) AS cost_per_deal,
+
+        -- Click Through Rate (CTR)
+        SAFE_DIVIDE(total_clicks, total_impressions) * 100 AS ctr
+    FROM `dbt-analytics-392621`.`pos_lite_dbt`.`stg_leads_funnel`
+)
+
+SELECT * FROM lead_metrics
+    );
+  
+[0m16:24:27.963541 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-analytics-392621&j=bq:US:f6bfd240-2108-40d3-9675-86a8f778a0b2&page=queryresults
+[0m16:24:28.251606 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-analytics-392621&j=bq:US:e684e11d-680f-4a28-ba4f-e8eb6817bdc3&page=queryresults
+[0m16:24:28.432988 [error] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-analytics-392621&j=bq:US:f6bfd240-2108-40d3-9675-86a8f778a0b2&page=queryresults
+[0m16:24:28.549011 [debug] [Thread-2 (]: Database Error in model mart_web_orders (models\mart\mart_web_orders.sql)
+  Bad int64 value: f
+  compiled code at target\run\dbt_sumup\models\mart\mart_web_orders.sql
+[0m16:24:28.549990 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9f8c823e-3f28-4d0c-8aeb-abb8f66f4312', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9347EE5D0>]}
+[0m16:24:28.552011 [error] [Thread-2 (]: 5 of 6 ERROR creating sql table model pos_lite_dbt.mart_web_orders ............. [[31mERROR[0m in 1.47s]
+[0m16:24:28.552987 [debug] [Thread-2 (]: Finished running node model.dbt_sumup.mart_web_orders
+[0m16:24:28.553987 [debug] [Thread-7 (]: Marking all children of 'model.dbt_sumup.mart_web_orders' to be skipped because of status 'error'.  Reason: Database Error in model mart_web_orders (models\mart\mart_web_orders.sql)
+  Bad int64 value: f
+  compiled code at target\run\dbt_sumup\models\mart\mart_web_orders.sql.
+[0m16:24:30.820844 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9f8c823e-3f28-4d0c-8aeb-abb8f66f4312', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F93490FED0>]}
+[0m16:24:30.821881 [info ] [Thread-4 (]: 4 of 6 OK created sql table model pos_lite_dbt.mart_leads_funnel ............... [[32mCREATE TABLE (3.7k rows, 530.2 KiB processed)[0m in 3.76s]
+[0m16:24:30.824337 [debug] [Thread-4 (]: Finished running node model.dbt_sumup.mart_leads_funnel
+[0m16:24:30.825332 [debug] [Thread-3 (]: Began running node model.dbt_sumup.mart_combined_analysis
+[0m16:24:30.827332 [info ] [Thread-3 (]: 6 of 6 SKIP relation pos_lite_dbt.mart_combined_analysis ....................... [[33mSKIP[0m]
+[0m16:24:30.828336 [debug] [Thread-3 (]: Finished running node model.dbt_sumup.mart_combined_analysis
+[0m16:24:30.830335 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:24:30.833353 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:24:30.833353 [debug] [MainThread]: Connection 'list_dbt-analytics-392621' was properly closed.
+[0m16:24:30.834353 [debug] [MainThread]: Connection 'list_dbt-analytics-392621_pos_lite_dbt' was properly closed.
+[0m16:24:30.834353 [debug] [MainThread]: Connection 'model.dbt_sumup.stg_channels' was properly closed.
+[0m16:24:30.835331 [debug] [MainThread]: Connection 'model.dbt_sumup.mart_web_orders' was properly closed.
+[0m16:24:30.836330 [debug] [MainThread]: Connection 'model.dbt_sumup.stg_web_orders' was properly closed.
+[0m16:24:30.836330 [debug] [MainThread]: Connection 'model.dbt_sumup.mart_leads_funnel' was properly closed.
+[0m16:24:30.837353 [info ] [MainThread]: 
+[0m16:24:30.838332 [info ] [MainThread]: Finished running 3 table models, 3 view models in 0 hours 0 minutes and 7.01 seconds (7.01s).
+[0m16:24:30.842333 [debug] [MainThread]: Command end result
+[0m16:24:30.944329 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\target\manifest.json
+[0m16:24:30.947335 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\target\semantic_manifest.json
+[0m16:24:30.959333 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\target\run_results.json
+[0m16:24:30.960333 [info ] [MainThread]: 
+[0m16:24:30.962333 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m16:24:30.963333 [info ] [MainThread]: 
+[0m16:24:30.965332 [error] [MainThread]:   Database Error in model mart_web_orders (models\mart\mart_web_orders.sql)
+  Bad int64 value: f
+  compiled code at target\run\dbt_sumup\models\mart\mart_web_orders.sql
+[0m16:24:30.966333 [info ] [MainThread]: 
+[0m16:24:30.967330 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=1 SKIP=1 TOTAL=6
+[0m16:24:30.970333 [debug] [MainThread]: Command `dbt run` failed at 16:24:30.970333 after 14.37 seconds
+[0m16:24:30.971331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F929C05CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F929727DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9298F3290>]}
+[0m16:24:30.972331 [debug] [MainThread]: Flushing usage events
+[0m16:24:31.492567 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:26:36.228908 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213DCA07490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213DCA5F310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213DCA36F50>]}
+
+
+============================== 16:26:36.238910 | fce29fda-2f6f-4d45-b854-76f4c1890192 ==============================
+[0m16:26:36.238910 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:26:36.241911 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt_sumup\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:26:38.226142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fce29fda-2f6f-4d45-b854-76f4c1890192', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213E635B4D0>]}
+[0m16:26:38.309142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fce29fda-2f6f-4d45-b854-76f4c1890192', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213E6345650>]}
+[0m16:26:38.310120 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m16:26:39.119116 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m16:26:39.410247 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m16:26:39.411247 [debug] [MainThread]: Partial parsing: updated file: dbt_sumup://models\staging\stg_web_orders.sql
+[0m16:26:39.917283 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_sumup.raw_data
+[0m16:26:39.959286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fce29fda-2f6f-4d45-b854-76f4c1890192', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213E68FA050>]}
+[0m16:26:40.176175 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\target\manifest.json
+[0m16:26:40.182173 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\target\semantic_manifest.json
+[0m16:26:40.214177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fce29fda-2f6f-4d45-b854-76f4c1890192', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213E6EBBD50>]}
+[0m16:26:40.216177 [info ] [MainThread]: Found 6 models, 3 sources, 489 macros
+[0m16:26:40.217174 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fce29fda-2f6f-4d45-b854-76f4c1890192', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213E6BB1390>]}
+[0m16:26:40.221177 [info ] [MainThread]: 
+[0m16:26:40.223178 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:26:40.225176 [info ] [MainThread]: 
+[0m16:26:40.227176 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:26:40.238176 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-analytics-392621'
+[0m16:26:40.240175 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:26:40.727099 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-analytics-392621_pos_lite_dbt'
+[0m16:26:40.728075 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:26:41.133999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fce29fda-2f6f-4d45-b854-76f4c1890192', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213E6BD5310>]}
+[0m16:26:41.134999 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:26:41.140998 [debug] [Thread-1 (]: Began running node model.dbt_sumup.stg_channels
+[0m16:26:41.140998 [debug] [Thread-2 (]: Began running node model.dbt_sumup.stg_leads_funnel
+[0m16:26:41.142000 [debug] [Thread-3 (]: Began running node model.dbt_sumup.stg_web_orders
+[0m16:26:41.142999 [info ] [Thread-1 (]: 1 of 6 START sql view model pos_lite_dbt.stg_channels .......................... [RUN]
+[0m16:26:41.144001 [info ] [Thread-2 (]: 2 of 6 START sql view model pos_lite_dbt.stg_leads_funnel ...................... [RUN]
+[0m16:26:41.148001 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dbt_sumup.stg_channels'
+[0m16:26:41.144999 [info ] [Thread-3 (]: 3 of 6 START sql view model pos_lite_dbt.stg_web_orders ........................ [RUN]
+[0m16:26:41.149001 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.dbt_sumup.stg_leads_funnel'
+[0m16:26:41.149999 [debug] [Thread-1 (]: Began compiling node model.dbt_sumup.stg_channels
+[0m16:26:41.151000 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.dbt_sumup.stg_web_orders'
+[0m16:26:41.151000 [debug] [Thread-2 (]: Began compiling node model.dbt_sumup.stg_leads_funnel
+[0m16:26:41.164999 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_sumup.stg_channels"
+[0m16:26:41.166000 [debug] [Thread-3 (]: Began compiling node model.dbt_sumup.stg_web_orders
+[0m16:26:41.172005 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_sumup.stg_leads_funnel"
+[0m16:26:41.178000 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_sumup.stg_web_orders"
+[0m16:26:41.179000 [debug] [Thread-1 (]: Began executing node model.dbt_sumup.stg_channels
+[0m16:26:41.181000 [debug] [Thread-2 (]: Began executing node model.dbt_sumup.stg_leads_funnel
+[0m16:26:41.229000 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_sumup.stg_channels"
+[0m16:26:41.234998 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_sumup.stg_leads_funnel"
+[0m16:26:41.235999 [debug] [Thread-3 (]: Began executing node model.dbt_sumup.stg_web_orders
+[0m16:26:41.243999 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_sumup.stg_web_orders"
+[0m16:26:41.244998 [debug] [Thread-1 (]: On model.dbt_sumup.stg_channels: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_sumup", "target_name": "dev", "node_id": "model.dbt_sumup.stg_channels"} */
+
+
+  create or replace view `dbt-analytics-392621`.`pos_lite_dbt`.`stg_channels`
+  OPTIONS()
+  as WITH cleaned_channels AS (
+    SELECT
+        CAMPAIGN_ID AS campaign_id,
+        CAMPAIGN_NAME AS campaign_name,
+        CAMPAIGN_PERIOD_BUDGET_CATEGORY AS budget_category,
+        CHANNEL_3 AS channel_level_3,
+        CHANNEL_4 AS channel_level_4,
+        CHANNEL_5 AS channel_level_5
+    FROM `dbt-analytics-392621`.`raw_data`.`channels`
+)
+
+SELECT * FROM cleaned_channels;
+
+
+[0m16:26:41.247000 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:26:41.248000 [debug] [Thread-2 (]: On model.dbt_sumup.stg_leads_funnel: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_sumup", "target_name": "dev", "node_id": "model.dbt_sumup.stg_leads_funnel"} */
+
+
+  create or replace view `dbt-analytics-392621`.`pos_lite_dbt`.`stg_leads_funnel`
+  OPTIONS()
+  as WITH cleaned_leads_funnel AS (
+    SELECT
+        DATE AS lead_activity_date,
+        COUNTRY_CODE AS country_code,
+        CAMPAIGN_ID AS campaign_id,
+        PRODUCT AS product,
+        CHANNEL_3 AS channel_level_3,
+        CHANNEL_4 AS channel_level_4,
+        CHANNEL_5 AS channel_level_5,
+        CAST(TOTAL_IMPRESSIONS AS INT64) AS total_impressions,
+        CAST(TOTAL_CLICKS AS INT64) AS total_clicks,
+        CAST(TOTAL_SPEND AS FLOAT64) AS total_spend,
+        CAST(TOTAL_LEADS AS INT64) AS total_leads,
+        CAST(TOTAL_FAKE_LEADS AS INT64) AS total_fake_leads,
+        CAST(TOTAL_SQLS AS INT64) AS total_sqls,
+        CAST(TOTAL_MEETING_DONE AS INT64) AS total_meeting_done,
+        CAST(TOTAL_SIGNED_LEADS AS INT64) AS total_signed_leads,
+        CAST(TOTAL_POS_LITE_DEALS AS INT64) AS total_pos_lite_deals
+    FROM `dbt-analytics-392621`.`raw_data`.`leads_funnel`
+)
+
+SELECT * FROM cleaned_leads_funnel;
+
+
+[0m16:26:41.250000 [debug] [Thread-3 (]: On model.dbt_sumup.stg_web_orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_sumup", "target_name": "dev", "node_id": "model.dbt_sumup.stg_web_orders"} */
+
+
+  create or replace view `dbt-analytics-392621`.`pos_lite_dbt`.`stg_web_orders`
+  OPTIONS()
+  as WITH cleaned_web_orders AS (
+    SELECT
+        DATE AS activity_date,
+        COUNTRY_CODE AS country_code,
+        CAMPAIGN_ID AS campaign_id,
+        SAFE_CAST(TOTAL_SPEND_EUR AS FLOAT64) AS total_spend_eur,
+        SAFE_CAST(NB_OF_SESSIONS AS INT64) AS nb_of_sessions,
+        SAFE_CAST(NB_OF_SIGNUPS AS INT64) AS nb_of_signups,
+        SAFE_CAST(NB_OF_ORDERS AS INT64) AS nb_of_orders,
+        SAFE_CAST(NB_OF_POSLITE_ITEMS_ORDERED AS INT64) AS nb_of_poslite_items_ordered,
+        SAFE_CAST(NB_POSLITE_ITEMS_DISPATCHED AS INT64) AS nb_poslite_items_dispatched
+    FROM `dbt-analytics-392621`.`raw_data`.`web_orders`
+)
+
+SELECT * FROM cleaned_web_orders;
+
+
+[0m16:26:41.285999 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:26:41.288001 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m16:26:41.937423 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-analytics-392621&j=bq:US:ea3758ce-9b7f-42a6-be7f-fedc0a9ed1e9&page=queryresults
+[0m16:26:41.942513 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-analytics-392621&j=bq:US:af518b96-35b3-438d-9140-4d2e0590b048&page=queryresults
+[0m16:26:41.997071 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-analytics-392621&j=bq:US:d70f1ed8-6219-40f5-96b1-ceae1f3e97ec&page=queryresults
+[0m16:26:42.564852 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fce29fda-2f6f-4d45-b854-76f4c1890192', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213DC176B90>]}
+[0m16:26:42.564852 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fce29fda-2f6f-4d45-b854-76f4c1890192', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213E6930190>]}
+[0m16:26:42.565859 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fce29fda-2f6f-4d45-b854-76f4c1890192', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213E742CC10>]}
+[0m16:26:42.566875 [info ] [Thread-2 (]: 2 of 6 OK created sql view model pos_lite_dbt.stg_leads_funnel ................. [[32mCREATE VIEW (0 processed)[0m in 1.41s]
+[0m16:26:42.567853 [info ] [Thread-1 (]: 1 of 6 OK created sql view model pos_lite_dbt.stg_channels ..................... [[32mCREATE VIEW (0 processed)[0m in 1.42s]
+[0m16:26:42.571856 [debug] [Thread-2 (]: Finished running node model.dbt_sumup.stg_leads_funnel
+[0m16:26:42.569854 [info ] [Thread-3 (]: 3 of 6 OK created sql view model pos_lite_dbt.stg_web_orders ................... [[32mCREATE VIEW (0 processed)[0m in 1.41s]
+[0m16:26:42.574855 [debug] [Thread-1 (]: Finished running node model.dbt_sumup.stg_channels
+[0m16:26:42.576855 [debug] [Thread-3 (]: Finished running node model.dbt_sumup.stg_web_orders
+[0m16:26:42.577857 [debug] [Thread-4 (]: Began running node model.dbt_sumup.mart_leads_funnel
+[0m16:26:42.581853 [debug] [Thread-2 (]: Began running node model.dbt_sumup.mart_web_orders
+[0m16:26:42.580855 [info ] [Thread-4 (]: 4 of 6 START sql table model pos_lite_dbt.mart_leads_funnel .................... [RUN]
+[0m16:26:42.582854 [info ] [Thread-2 (]: 5 of 6 START sql table model pos_lite_dbt.mart_web_orders ...................... [RUN]
+[0m16:26:42.584852 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.dbt_sumup.mart_leads_funnel'
+[0m16:26:42.585852 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_sumup.stg_leads_funnel, now model.dbt_sumup.mart_web_orders)
+[0m16:26:42.592855 [debug] [Thread-2 (]: Began compiling node model.dbt_sumup.mart_web_orders
+[0m16:26:42.604853 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_sumup.mart_web_orders"
+[0m16:26:42.586854 [debug] [Thread-4 (]: Began compiling node model.dbt_sumup.mart_leads_funnel
+[0m16:26:42.622855 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_sumup.mart_leads_funnel"
+[0m16:26:42.628854 [debug] [Thread-4 (]: Began executing node model.dbt_sumup.mart_leads_funnel
+[0m16:26:42.693851 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m16:26:42.694853 [debug] [Thread-2 (]: Began executing node model.dbt_sumup.mart_web_orders
+[0m16:26:42.763850 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_sumup.mart_web_orders"
+[0m16:26:42.766852 [debug] [Thread-2 (]: On model.dbt_sumup.mart_web_orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_sumup", "target_name": "dev", "node_id": "model.dbt_sumup.mart_web_orders"} */
+
+  
+    
+
+    create or replace table `dbt-analytics-392621`.`pos_lite_dbt`.`mart_web_orders`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH web_order_metrics AS (
+    SELECT
+        wo.activity_date,
+        wo.country_code,
+        wo.campaign_id,
+        ch.channel_level_3,
+        ch.channel_level_4,
+        ch.channel_level_5,
+        wo.nb_of_sessions,
+        wo.nb_of_signups,
+        wo.nb_of_orders,
+        wo.nb_of_poslite_items_ordered,
+        wo.nb_poslite_items_dispatched,
+        wo.total_spend_eur,
+        
+        -- Click Through Rate (CTR)
+        SAFE_DIVIDE(wo.nb_of_signups, wo.nb_of_sessions) * 100 AS ctr,
+        
+        -- Costo per order
+        SAFE_DIVIDE(wo.total_spend_eur, wo.nb_of_orders) AS cost_per_order
+    FROM `dbt-analytics-392621`.`pos_lite_dbt`.`stg_web_orders` wo
+    LEFT JOIN `dbt-analytics-392621`.`pos_lite_dbt`.`stg_channels` ch
+      ON wo.campaign_id = ch.campaign_id
+)
+SELECT * FROM web_order_metrics
+    );
+  
+[0m16:26:42.767852 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m16:26:43.197200 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_sumup.mart_leads_funnel"
+[0m16:26:43.199180 [debug] [Thread-4 (]: On model.dbt_sumup.mart_leads_funnel: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_sumup", "target_name": "dev", "node_id": "model.dbt_sumup.mart_leads_funnel"} */
+
+  
+    
+
+    create or replace table `dbt-analytics-392621`.`pos_lite_dbt`.`mart_leads_funnel`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH lead_metrics AS (
+    SELECT
+        lead_activity_date AS activity_date,
+        country_code,
+        campaign_id,
+        product,
+        channel_level_3,
+        channel_level_4,
+        channel_level_5,
+        total_leads,
+        total_fake_leads,
+        total_sqls,
+        total_meeting_done,
+        total_signed_leads,
+        total_pos_lite_deals,
+        total_spend,
+        total_impressions,
+        total_clicks,
+        
+        -- Conversion rate from leads to SQLs
+        SAFE_DIVIDE(total_sqls, total_leads) * 100 AS conversion_rate_sqls,
+        
+        -- Conversion rate from SQLs to meetings
+        SAFE_DIVIDE(total_meeting_done, total_sqls) * 100 AS conversion_rate_meetings,
+        
+        -- Conversion rate from meetings to signed leads
+        SAFE_DIVIDE(total_signed_leads, total_meeting_done) * 100 AS conversion_rate_signed_leads,
+                
+        -- Conversion rate from leads to deals for POS Lite
+        SAFE_DIVIDE(total_pos_lite_deals, total_signed_leads) * 100 AS conversion_rate_pos_deals,
+        
+        -- Conversion rate of leads to final deals
+        SAFE_DIVIDE(total_pos_lite_deals, total_leads) * 100 AS conversion_rate_deals,
+        
+        -- Cost per lead
+        SAFE_DIVIDE(total_spend, total_leads) AS cost_per_lead,
+
+        -- Costo per POS deal
+        SAFE_DIVIDE(total_spend, total_pos_lite_deals) AS cost_per_deal,
+
+        -- Click Through Rate (CTR)
+        SAFE_DIVIDE(total_clicks, total_impressions) * 100 AS ctr
+    FROM `dbt-analytics-392621`.`pos_lite_dbt`.`stg_leads_funnel`
+)
+
+SELECT * FROM lead_metrics
+    );
+  
+[0m16:26:43.520657 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-analytics-392621&j=bq:US:ef81dd77-003a-407d-aeb9-5ff438a01572&page=queryresults
+[0m16:26:43.752974 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-analytics-392621&j=bq:US:1ae1c657-7d6d-4a09-82c2-485ab1306a6b&page=queryresults
+[0m16:26:46.031559 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fce29fda-2f6f-4d45-b854-76f4c1890192', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213E7611FD0>]}
+[0m16:26:46.034579 [info ] [Thread-2 (]: 5 of 6 OK created sql table model pos_lite_dbt.mart_web_orders ................. [[32mCREATE TABLE (9.9k rows, 313.0 KiB processed)[0m in 3.45s]
+[0m16:26:46.037579 [debug] [Thread-2 (]: Finished running node model.dbt_sumup.mart_web_orders
+[0m16:26:46.279206 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fce29fda-2f6f-4d45-b854-76f4c1890192', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213E6ECF3D0>]}
+[0m16:26:46.280204 [info ] [Thread-4 (]: 4 of 6 OK created sql table model pos_lite_dbt.mart_leads_funnel ............... [[32mCREATE TABLE (3.7k rows, 530.2 KiB processed)[0m in 3.70s]
+[0m16:26:46.282209 [debug] [Thread-4 (]: Finished running node model.dbt_sumup.mart_leads_funnel
+[0m16:26:46.283219 [debug] [Thread-3 (]: Began running node model.dbt_sumup.mart_combined_analysis
+[0m16:26:46.284210 [info ] [Thread-3 (]: 6 of 6 START sql table model pos_lite_dbt.mart_combined_analysis ............... [RUN]
+[0m16:26:46.286327 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_sumup.stg_web_orders, now model.dbt_sumup.mart_combined_analysis)
+[0m16:26:46.286327 [debug] [Thread-3 (]: Began compiling node model.dbt_sumup.mart_combined_analysis
+[0m16:26:46.291327 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_sumup.mart_combined_analysis"
+[0m16:26:46.293325 [debug] [Thread-3 (]: Began executing node model.dbt_sumup.mart_combined_analysis
+[0m16:26:46.304338 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_sumup.mart_combined_analysis"
+[0m16:26:46.307327 [debug] [Thread-3 (]: On model.dbt_sumup.mart_combined_analysis: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_sumup", "target_name": "dev", "node_id": "model.dbt_sumup.mart_combined_analysis"} */
+
+  
+    
+
+    create or replace table `dbt-analytics-392621`.`pos_lite_dbt`.`mart_combined_analysis`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH combined_metrics AS (
+    SELECT
+        COALESCE(wo.activity_date, lf.activity_date) AS activity_date,
+        COALESCE(wo.country_code, lf.country_code) AS country_code,
+        COALESCE(wo.campaign_id, lf.campaign_id) AS campaign_id,
+        COALESCE(wo.product, lf.product) AS product,
+        COALESCE(wo.channel_level_3, lf.channel_level_3) AS channel_level_3,
+        COALESCE(wo.channel_level_4, lf.channel_level_4) AS channel_level_4,
+        COALESCE(wo.channel_level_5, lf.channel_level_5) AS channel_level_5,
+        
+        -- Web order metrics
+        wo.nb_of_sessions,
+        wo.nb_of_signups,
+        wo.nb_of_orders,
+        wo.nb_of_poslite_items_ordered,
+        wo.nb_poslite_items_dispatched,
+        wo.total_spend_eur,
+        wo.ctr AS web_order_ctr,
+        wo.cost_per_order,
+        
+        -- Lead funnel metrics
+        lf.total_leads,
+        lf.total_sqls,
+        lf.total_meeting_done,
+        lf.total_signed_leads,
+        lf.total_pos_lite_deals,
+        lf.total_spend AS lead_total_spend,
+        lf.conversion_rate_sqls,
+        lf.conversion_rate_meetings,
+        lf.conversion_rate_signed_leads,
+        lf.conversion_rate_deals,
+        lf.conversion_rate_pos_deals,
+        lf.cost_per_lead,
+        lf.cost_per_deal,
+        lf.ctr AS lead_ctr
+    FROM `dbt-analytics-392621`.`pos_lite_dbt`.`mart_web_orders` wo
+    FULL OUTER JOIN `dbt-analytics-392621`.`pos_lite_dbt`.`mart_leads_funnel` lf
+      ON wo.activity_date = lf.activity_date
+     AND wo.country_code = lf.country_code
+     AND wo.campaign_id = lf.campaign_id
+)
+
+SELECT * FROM combined_metrics
+    );
+  
+[0m16:26:46.309329 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m16:26:46.984850 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-analytics-392621&j=bq:US:f48aa2b5-62d8-4f8b-b7bb-03c58502d54a&page=queryresults
+[0m16:26:47.168831 [error] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-analytics-392621&j=bq:US:f48aa2b5-62d8-4f8b-b7bb-03c58502d54a&page=queryresults
+[0m16:26:47.177832 [debug] [Thread-3 (]: Database Error in model mart_combined_analysis (models\mart\mart_combined_analysis.sql)
+  Name product not found inside wo at [18:21]
+  compiled code at target\run\dbt_sumup\models\mart\mart_combined_analysis.sql
+[0m16:26:47.178832 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fce29fda-2f6f-4d45-b854-76f4c1890192', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213E753F490>]}
+[0m16:26:47.180838 [error] [Thread-3 (]: 6 of 6 ERROR creating sql table model pos_lite_dbt.mart_combined_analysis ...... [[31mERROR[0m in 0.89s]
+[0m16:26:47.183835 [debug] [Thread-3 (]: Finished running node model.dbt_sumup.mart_combined_analysis
+[0m16:26:47.184831 [debug] [Thread-7 (]: Marking all children of 'model.dbt_sumup.mart_combined_analysis' to be skipped because of status 'error'.  Reason: Database Error in model mart_combined_analysis (models\mart\mart_combined_analysis.sql)
+  Name product not found inside wo at [18:21]
+  compiled code at target\run\dbt_sumup\models\mart\mart_combined_analysis.sql.
+[0m16:26:47.189853 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:26:47.192831 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:26:47.193832 [debug] [MainThread]: Connection 'list_dbt-analytics-392621' was properly closed.
+[0m16:26:47.193832 [debug] [MainThread]: Connection 'list_dbt-analytics-392621_pos_lite_dbt' was properly closed.
+[0m16:26:47.194834 [debug] [MainThread]: Connection 'model.dbt_sumup.stg_channels' was properly closed.
+[0m16:26:47.195835 [debug] [MainThread]: Connection 'model.dbt_sumup.mart_web_orders' was properly closed.
+[0m16:26:47.196833 [debug] [MainThread]: Connection 'model.dbt_sumup.mart_combined_analysis' was properly closed.
+[0m16:26:47.197834 [debug] [MainThread]: Connection 'model.dbt_sumup.mart_leads_funnel' was properly closed.
+[0m16:26:47.197834 [info ] [MainThread]: 
+[0m16:26:47.198833 [info ] [MainThread]: Finished running 3 table models, 3 view models in 0 hours 0 minutes and 6.97 seconds (6.97s).
+[0m16:26:47.202836 [debug] [MainThread]: Command end result
+[0m16:26:47.254839 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\target\manifest.json
+[0m16:26:47.261834 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\target\semantic_manifest.json
+[0m16:26:47.276833 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\target\run_results.json
+[0m16:26:47.278832 [info ] [MainThread]: 
+[0m16:26:47.279833 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m16:26:47.281835 [info ] [MainThread]: 
+[0m16:26:47.282837 [error] [MainThread]:   Database Error in model mart_combined_analysis (models\mart\mart_combined_analysis.sql)
+  Name product not found inside wo at [18:21]
+  compiled code at target\run\dbt_sumup\models\mart\mart_combined_analysis.sql
+[0m16:26:47.283834 [info ] [MainThread]: 
+[0m16:26:47.286834 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=1 SKIP=0 TOTAL=6
+[0m16:26:47.289833 [debug] [MainThread]: Command `dbt run` failed at 16:26:47.289833 after 11.17 seconds
+[0m16:26:47.292837 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213DC7FB9D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213DCA5E090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213DCA5EBD0>]}
+[0m16:26:47.294834 [debug] [MainThread]: Flushing usage events
+[0m16:26:47.840901 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:29:02.069745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C33005C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C33007210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C33005610>]}
+
+
+============================== 16:29:02.077770 | 343da755-2cdc-4ca3-aac5-8fcda6cb0623 ==============================
+[0m16:29:02.077770 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:29:02.079747 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\Lenovo\\Documents\\Gonza\\Trabajo\\Ejercicios\\SumUp\\dbt_sumup\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:29:04.022861 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '343da755-2cdc-4ca3-aac5-8fcda6cb0623', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C39C22A90>]}
+[0m16:29:04.098863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '343da755-2cdc-4ca3-aac5-8fcda6cb0623', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C2EEC9D50>]}
+[0m16:29:04.100864 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m16:29:04.855886 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m16:29:05.199242 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m16:29:05.201246 [debug] [MainThread]: Partial parsing: updated file: dbt_sumup://models\mart\mart_combined_analysis.sql
+[0m16:29:05.699247 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_sumup.raw_data
+[0m16:29:05.721247 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '343da755-2cdc-4ca3-aac5-8fcda6cb0623', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C3D045990>]}
+[0m16:29:05.840245 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\target\manifest.json
+[0m16:29:05.846249 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\target\semantic_manifest.json
+[0m16:29:05.888247 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '343da755-2cdc-4ca3-aac5-8fcda6cb0623', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C3D3BB810>]}
+[0m16:29:05.889250 [info ] [MainThread]: Found 6 models, 3 sources, 489 macros
+[0m16:29:05.891247 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '343da755-2cdc-4ca3-aac5-8fcda6cb0623', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C3D07BB50>]}
+[0m16:29:05.894246 [info ] [MainThread]: 
+[0m16:29:05.901247 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:29:05.935249 [info ] [MainThread]: 
+[0m16:29:05.940247 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:29:05.955244 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-analytics-392621'
+[0m16:29:05.956244 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:29:06.428023 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-analytics-392621_pos_lite_dbt'
+[0m16:29:06.428023 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:29:06.823119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '343da755-2cdc-4ca3-aac5-8fcda6cb0623', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C3CB6F210>]}
+[0m16:29:06.824118 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:29:06.830116 [debug] [Thread-1 (]: Began running node model.dbt_sumup.stg_channels
+[0m16:29:06.831117 [debug] [Thread-2 (]: Began running node model.dbt_sumup.stg_leads_funnel
+[0m16:29:06.831117 [debug] [Thread-3 (]: Began running node model.dbt_sumup.stg_web_orders
+[0m16:29:06.832122 [info ] [Thread-1 (]: 1 of 6 START sql view model pos_lite_dbt.stg_channels .......................... [RUN]
+[0m16:29:06.833117 [info ] [Thread-2 (]: 2 of 6 START sql view model pos_lite_dbt.stg_leads_funnel ...................... [RUN]
+[0m16:29:06.837138 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dbt_sumup.stg_channels'
+[0m16:29:06.835116 [info ] [Thread-3 (]: 3 of 6 START sql view model pos_lite_dbt.stg_web_orders ........................ [RUN]
+[0m16:29:06.839138 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.dbt_sumup.stg_leads_funnel'
+[0m16:29:06.839138 [debug] [Thread-1 (]: Began compiling node model.dbt_sumup.stg_channels
+[0m16:29:06.841133 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.dbt_sumup.stg_web_orders'
+[0m16:29:06.842117 [debug] [Thread-2 (]: Began compiling node model.dbt_sumup.stg_leads_funnel
+[0m16:29:06.856118 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_sumup.stg_channels"
+[0m16:29:06.857119 [debug] [Thread-3 (]: Began compiling node model.dbt_sumup.stg_web_orders
+[0m16:29:06.862113 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_sumup.stg_leads_funnel"
+[0m16:29:06.868118 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_sumup.stg_web_orders"
+[0m16:29:06.870115 [debug] [Thread-1 (]: Began executing node model.dbt_sumup.stg_channels
+[0m16:29:06.933118 [debug] [Thread-2 (]: Began executing node model.dbt_sumup.stg_leads_funnel
+[0m16:29:06.958112 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_sumup.stg_leads_funnel"
+[0m16:29:06.961115 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_sumup.stg_channels"
+[0m16:29:06.962114 [debug] [Thread-3 (]: Began executing node model.dbt_sumup.stg_web_orders
+[0m16:29:06.963115 [debug] [Thread-2 (]: On model.dbt_sumup.stg_leads_funnel: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_sumup", "target_name": "dev", "node_id": "model.dbt_sumup.stg_leads_funnel"} */
+
+
+  create or replace view `dbt-analytics-392621`.`pos_lite_dbt`.`stg_leads_funnel`
+  OPTIONS()
+  as WITH cleaned_leads_funnel AS (
+    SELECT
+        DATE AS lead_activity_date,
+        COUNTRY_CODE AS country_code,
+        CAMPAIGN_ID AS campaign_id,
+        PRODUCT AS product,
+        CHANNEL_3 AS channel_level_3,
+        CHANNEL_4 AS channel_level_4,
+        CHANNEL_5 AS channel_level_5,
+        CAST(TOTAL_IMPRESSIONS AS INT64) AS total_impressions,
+        CAST(TOTAL_CLICKS AS INT64) AS total_clicks,
+        CAST(TOTAL_SPEND AS FLOAT64) AS total_spend,
+        CAST(TOTAL_LEADS AS INT64) AS total_leads,
+        CAST(TOTAL_FAKE_LEADS AS INT64) AS total_fake_leads,
+        CAST(TOTAL_SQLS AS INT64) AS total_sqls,
+        CAST(TOTAL_MEETING_DONE AS INT64) AS total_meeting_done,
+        CAST(TOTAL_SIGNED_LEADS AS INT64) AS total_signed_leads,
+        CAST(TOTAL_POS_LITE_DEALS AS INT64) AS total_pos_lite_deals
+    FROM `dbt-analytics-392621`.`raw_data`.`leads_funnel`
+)
+
+SELECT * FROM cleaned_leads_funnel;
+
+
+[0m16:29:06.968111 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_sumup.stg_web_orders"
+[0m16:29:06.969111 [debug] [Thread-1 (]: On model.dbt_sumup.stg_channels: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_sumup", "target_name": "dev", "node_id": "model.dbt_sumup.stg_channels"} */
+
+
+  create or replace view `dbt-analytics-392621`.`pos_lite_dbt`.`stg_channels`
+  OPTIONS()
+  as WITH cleaned_channels AS (
+    SELECT
+        CAMPAIGN_ID AS campaign_id,
+        CAMPAIGN_NAME AS campaign_name,
+        CAMPAIGN_PERIOD_BUDGET_CATEGORY AS budget_category,
+        CHANNEL_3 AS channel_level_3,
+        CHANNEL_4 AS channel_level_4,
+        CHANNEL_5 AS channel_level_5
+    FROM `dbt-analytics-392621`.`raw_data`.`channels`
+)
+
+SELECT * FROM cleaned_channels;
+
+
+[0m16:29:06.970114 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:29:06.971115 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:29:06.972115 [debug] [Thread-3 (]: On model.dbt_sumup.stg_web_orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_sumup", "target_name": "dev", "node_id": "model.dbt_sumup.stg_web_orders"} */
+
+
+  create or replace view `dbt-analytics-392621`.`pos_lite_dbt`.`stg_web_orders`
+  OPTIONS()
+  as WITH cleaned_web_orders AS (
+    SELECT
+        DATE AS activity_date,
+        COUNTRY_CODE AS country_code,
+        CAMPAIGN_ID AS campaign_id,
+        SAFE_CAST(TOTAL_SPEND_EUR AS FLOAT64) AS total_spend_eur,
+        SAFE_CAST(NB_OF_SESSIONS AS INT64) AS nb_of_sessions,
+        SAFE_CAST(NB_OF_SIGNUPS AS INT64) AS nb_of_signups,
+        SAFE_CAST(NB_OF_ORDERS AS INT64) AS nb_of_orders,
+        SAFE_CAST(NB_OF_POSLITE_ITEMS_ORDERED AS INT64) AS nb_of_poslite_items_ordered,
+        SAFE_CAST(NB_POSLITE_ITEMS_DISPATCHED AS INT64) AS nb_poslite_items_dispatched
+    FROM `dbt-analytics-392621`.`raw_data`.`web_orders`
+)
+
+SELECT * FROM cleaned_web_orders;
+
+
+[0m16:29:07.011119 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m16:29:08.438190 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-analytics-392621&j=bq:US:69b0122f-2bda-4388-bac2-4ce0b3f307d9&page=queryresults
+[0m16:29:08.439192 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-analytics-392621&j=bq:US:ca228188-e43c-413c-ac22-a0e20f8746d4&page=queryresults
+[0m16:29:08.440190 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-analytics-392621&j=bq:US:e070820c-6ab2-41e6-8089-5f4ff9d69aef&page=queryresults
+[0m16:29:09.270172 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '343da755-2cdc-4ca3-aac5-8fcda6cb0623', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C3CB6D410>]}
+[0m16:29:09.271172 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '343da755-2cdc-4ca3-aac5-8fcda6cb0623', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C3D886690>]}
+[0m16:29:09.272173 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '343da755-2cdc-4ca3-aac5-8fcda6cb0623', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C3DAC2490>]}
+[0m16:29:09.273171 [info ] [Thread-3 (]: 3 of 6 OK created sql view model pos_lite_dbt.stg_web_orders ................... [[32mCREATE VIEW (0 processed)[0m in 2.43s]
+[0m16:29:09.274174 [info ] [Thread-2 (]: 2 of 6 OK created sql view model pos_lite_dbt.stg_leads_funnel ................. [[32mCREATE VIEW (0 processed)[0m in 2.43s]
+[0m16:29:09.277173 [debug] [Thread-3 (]: Finished running node model.dbt_sumup.stg_web_orders
+[0m16:29:09.275172 [info ] [Thread-1 (]: 1 of 6 OK created sql view model pos_lite_dbt.stg_channels ..................... [[32mCREATE VIEW (0 processed)[0m in 2.43s]
+[0m16:29:09.278171 [debug] [Thread-2 (]: Finished running node model.dbt_sumup.stg_leads_funnel
+[0m16:29:09.280172 [debug] [Thread-1 (]: Finished running node model.dbt_sumup.stg_channels
+[0m16:29:09.282174 [debug] [Thread-4 (]: Began running node model.dbt_sumup.mart_leads_funnel
+[0m16:29:09.283172 [debug] [Thread-2 (]: Began running node model.dbt_sumup.mart_web_orders
+[0m16:29:09.283172 [info ] [Thread-4 (]: 4 of 6 START sql table model pos_lite_dbt.mart_leads_funnel .................... [RUN]
+[0m16:29:09.286175 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.dbt_sumup.mart_leads_funnel'
+[0m16:29:09.284171 [info ] [Thread-2 (]: 5 of 6 START sql table model pos_lite_dbt.mart_web_orders ...................... [RUN]
+[0m16:29:09.287174 [debug] [Thread-4 (]: Began compiling node model.dbt_sumup.mart_leads_funnel
+[0m16:29:09.289175 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_sumup.stg_leads_funnel, now model.dbt_sumup.mart_web_orders)
+[0m16:29:09.296172 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_sumup.mart_leads_funnel"
+[0m16:29:09.298174 [debug] [Thread-2 (]: Began compiling node model.dbt_sumup.mart_web_orders
+[0m16:29:09.306174 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_sumup.mart_web_orders"
+[0m16:29:09.307172 [debug] [Thread-4 (]: Began executing node model.dbt_sumup.mart_leads_funnel
+[0m16:29:09.327169 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m16:29:09.328169 [debug] [Thread-2 (]: Began executing node model.dbt_sumup.mart_web_orders
+[0m16:29:09.379169 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m16:29:09.855145 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_sumup.mart_leads_funnel"
+[0m16:29:09.856121 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_sumup.mart_web_orders"
+[0m16:29:09.858420 [debug] [Thread-4 (]: On model.dbt_sumup.mart_leads_funnel: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_sumup", "target_name": "dev", "node_id": "model.dbt_sumup.mart_leads_funnel"} */
+
+  
+    
+
+    create or replace table `dbt-analytics-392621`.`pos_lite_dbt`.`mart_leads_funnel`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH lead_metrics AS (
+    SELECT
+        lead_activity_date AS activity_date,
+        country_code,
+        campaign_id,
+        product,
+        channel_level_3,
+        channel_level_4,
+        channel_level_5,
+        total_leads,
+        total_fake_leads,
+        total_sqls,
+        total_meeting_done,
+        total_signed_leads,
+        total_pos_lite_deals,
+        total_spend,
+        total_impressions,
+        total_clicks,
+        
+        -- Conversion rate from leads to SQLs
+        SAFE_DIVIDE(total_sqls, total_leads) * 100 AS conversion_rate_sqls,
+        
+        -- Conversion rate from SQLs to meetings
+        SAFE_DIVIDE(total_meeting_done, total_sqls) * 100 AS conversion_rate_meetings,
+        
+        -- Conversion rate from meetings to signed leads
+        SAFE_DIVIDE(total_signed_leads, total_meeting_done) * 100 AS conversion_rate_signed_leads,
+                
+        -- Conversion rate from leads to deals for POS Lite
+        SAFE_DIVIDE(total_pos_lite_deals, total_signed_leads) * 100 AS conversion_rate_pos_deals,
+        
+        -- Conversion rate of leads to final deals
+        SAFE_DIVIDE(total_pos_lite_deals, total_leads) * 100 AS conversion_rate_deals,
+        
+        -- Cost per lead
+        SAFE_DIVIDE(total_spend, total_leads) AS cost_per_lead,
+
+        -- Costo per POS deal
+        SAFE_DIVIDE(total_spend, total_pos_lite_deals) AS cost_per_deal,
+
+        -- Click Through Rate (CTR)
+        SAFE_DIVIDE(total_clicks, total_impressions) * 100 AS ctr
+    FROM `dbt-analytics-392621`.`pos_lite_dbt`.`stg_leads_funnel`
+)
+
+SELECT * FROM lead_metrics
+    );
+  
+[0m16:29:09.860421 [debug] [Thread-2 (]: On model.dbt_sumup.mart_web_orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_sumup", "target_name": "dev", "node_id": "model.dbt_sumup.mart_web_orders"} */
+
+  
+    
+
+    create or replace table `dbt-analytics-392621`.`pos_lite_dbt`.`mart_web_orders`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH web_order_metrics AS (
+    SELECT
+        wo.activity_date,
+        wo.country_code,
+        wo.campaign_id,
+        ch.channel_level_3,
+        ch.channel_level_4,
+        ch.channel_level_5,
+        wo.nb_of_sessions,
+        wo.nb_of_signups,
+        wo.nb_of_orders,
+        wo.nb_of_poslite_items_ordered,
+        wo.nb_poslite_items_dispatched,
+        wo.total_spend_eur,
+        
+        -- Click Through Rate (CTR)
+        SAFE_DIVIDE(wo.nb_of_signups, wo.nb_of_sessions) * 100 AS ctr,
+        
+        -- Costo per order
+        SAFE_DIVIDE(wo.total_spend_eur, wo.nb_of_orders) AS cost_per_order
+    FROM `dbt-analytics-392621`.`pos_lite_dbt`.`stg_web_orders` wo
+    LEFT JOIN `dbt-analytics-392621`.`pos_lite_dbt`.`stg_channels` ch
+      ON wo.campaign_id = ch.campaign_id
+)
+SELECT * FROM web_order_metrics
+    );
+  
+[0m16:29:10.407064 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-analytics-392621&j=bq:US:911ea067-7200-482c-8d1a-649c1b1e5f31&page=queryresults
+[0m16:29:10.557337 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-analytics-392621&j=bq:US:7ea63da4-25c5-418c-979a-46f27f18c24c&page=queryresults
+[0m16:29:12.651921 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '343da755-2cdc-4ca3-aac5-8fcda6cb0623', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C3D3F0E10>]}
+[0m16:29:12.652921 [info ] [Thread-4 (]: 4 of 6 OK created sql table model pos_lite_dbt.mart_leads_funnel ............... [[32mCREATE TABLE (3.7k rows, 530.2 KiB processed)[0m in 3.37s]
+[0m16:29:12.654904 [debug] [Thread-4 (]: Finished running node model.dbt_sumup.mart_leads_funnel
+[0m16:29:13.118116 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '343da755-2cdc-4ca3-aac5-8fcda6cb0623', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C3DB6B890>]}
+[0m16:29:13.119116 [info ] [Thread-2 (]: 5 of 6 OK created sql table model pos_lite_dbt.mart_web_orders ................. [[32mCREATE TABLE (9.9k rows, 313.0 KiB processed)[0m in 3.83s]
+[0m16:29:13.121121 [debug] [Thread-2 (]: Finished running node model.dbt_sumup.mart_web_orders
+[0m16:29:13.122118 [debug] [Thread-1 (]: Began running node model.dbt_sumup.mart_combined_analysis
+[0m16:29:13.123141 [info ] [Thread-1 (]: 6 of 6 START sql table model pos_lite_dbt.mart_combined_analysis ............... [RUN]
+[0m16:29:13.125140 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_sumup.stg_channels, now model.dbt_sumup.mart_combined_analysis)
+[0m16:29:13.125140 [debug] [Thread-1 (]: Began compiling node model.dbt_sumup.mart_combined_analysis
+[0m16:29:13.130117 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_sumup.mart_combined_analysis"
+[0m16:29:13.132121 [debug] [Thread-1 (]: Began executing node model.dbt_sumup.mart_combined_analysis
+[0m16:29:13.138123 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_sumup.mart_combined_analysis"
+[0m16:29:13.139119 [debug] [Thread-1 (]: On model.dbt_sumup.mart_combined_analysis: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "dbt_sumup", "target_name": "dev", "node_id": "model.dbt_sumup.mart_combined_analysis"} */
+
+  
+    
+
+    create or replace table `dbt-analytics-392621`.`pos_lite_dbt`.`mart_combined_analysis`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH combined_metrics AS (
+    SELECT
+        COALESCE(wo.activity_date, lf.activity_date) AS activity_date,
+        COALESCE(wo.country_code, lf.country_code) AS country_code,
+        COALESCE(wo.campaign_id, lf.campaign_id) AS campaign_id,
+        COALESCE(lf.product) AS product,
+        COALESCE(wo.channel_level_3, lf.channel_level_3) AS channel_level_3,
+        COALESCE(wo.channel_level_4, lf.channel_level_4) AS channel_level_4,
+        COALESCE(wo.channel_level_5, lf.channel_level_5) AS channel_level_5,
+        
+        -- Web order metrics
+        wo.nb_of_sessions,
+        wo.nb_of_signups,
+        wo.nb_of_orders,
+        wo.nb_of_poslite_items_ordered,
+        wo.nb_poslite_items_dispatched,
+        wo.total_spend_eur,
+        wo.ctr AS web_order_ctr,
+        wo.cost_per_order,
+        
+        -- Lead funnel metrics
+        lf.total_leads,
+        lf.total_sqls,
+        lf.total_meeting_done,
+        lf.total_signed_leads,
+        lf.total_pos_lite_deals,
+        lf.total_spend AS lead_total_spend,
+        lf.conversion_rate_sqls,
+        lf.conversion_rate_meetings,
+        lf.conversion_rate_signed_leads,
+        lf.conversion_rate_deals,
+        lf.conversion_rate_pos_deals,
+        lf.cost_per_lead,
+        lf.cost_per_deal,
+        lf.ctr AS lead_ctr
+    FROM `dbt-analytics-392621`.`pos_lite_dbt`.`mart_web_orders` wo
+    FULL OUTER JOIN `dbt-analytics-392621`.`pos_lite_dbt`.`mart_leads_funnel` lf
+      ON wo.activity_date = lf.activity_date
+     AND wo.country_code = lf.country_code
+     AND wo.campaign_id = lf.campaign_id
+)
+
+SELECT * FROM combined_metrics
+    );
+  
+[0m16:29:13.141120 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:29:13.780664 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-analytics-392621&j=bq:US:a3261f03-ba90-4245-b329-c1ae41323b16&page=queryresults
+[0m16:29:16.615265 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '343da755-2cdc-4ca3-aac5-8fcda6cb0623', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C3D87A650>]}
+[0m16:29:16.617268 [info ] [Thread-1 (]: 6 of 6 OK created sql table model pos_lite_dbt.mart_combined_analysis .......... [[32mCREATE TABLE (14.4k rows, 1.9 MiB processed)[0m in 3.49s]
+[0m16:29:16.618268 [debug] [Thread-1 (]: Finished running node model.dbt_sumup.mart_combined_analysis
+[0m16:29:16.621264 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:29:16.624287 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:29:16.625262 [debug] [MainThread]: Connection 'list_dbt-analytics-392621' was properly closed.
+[0m16:29:16.626265 [debug] [MainThread]: Connection 'list_dbt-analytics-392621_pos_lite_dbt' was properly closed.
+[0m16:29:16.627285 [debug] [MainThread]: Connection 'model.dbt_sumup.mart_combined_analysis' was properly closed.
+[0m16:29:16.628264 [debug] [MainThread]: Connection 'model.dbt_sumup.mart_web_orders' was properly closed.
+[0m16:29:16.629267 [debug] [MainThread]: Connection 'model.dbt_sumup.stg_web_orders' was properly closed.
+[0m16:29:16.630263 [debug] [MainThread]: Connection 'model.dbt_sumup.mart_leads_funnel' was properly closed.
+[0m16:29:16.631266 [info ] [MainThread]: 
+[0m16:29:16.633266 [info ] [MainThread]: Finished running 3 table models, 3 view models in 0 hours 0 minutes and 10.69 seconds (10.69s).
+[0m16:29:16.641263 [debug] [MainThread]: Command end result
+[0m16:29:16.750265 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\target\manifest.json
+[0m16:29:16.755264 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\target\semantic_manifest.json
+[0m16:29:16.768264 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Lenovo\Documents\Gonza\Trabajo\Ejercicios\SumUp\dbt_sumup\target\run_results.json
+[0m16:29:16.769267 [info ] [MainThread]: 
+[0m16:29:16.770265 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:29:16.772265 [info ] [MainThread]: 
+[0m16:29:16.774264 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+[0m16:29:16.778264 [debug] [MainThread]: Command `dbt run` succeeded at 16:29:16.778264 after 14.82 seconds
+[0m16:29:16.782267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C2D7500D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C2D92A210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C32B27DD0>]}
+[0m16:29:16.784267 [debug] [MainThread]: Flushing usage events
+[0m16:29:17.682112 [debug] [MainThread]: An error was encountered while trying to flush usage events

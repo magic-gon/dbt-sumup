@@ -27,7 +27,7 @@
         -- Click Through Rate (CTR)
         SAFE_DIVIDE(wo.nb_of_signups, wo.nb_of_sessions) * 100 AS ctr,
         
-        -- Costo por orden
+        -- Costo per order
         SAFE_DIVIDE(wo.total_spend_eur, wo.nb_of_orders) AS cost_per_order
     FROM `dbt-analytics-392621`.`pos_lite_dbt`.`stg_web_orders` wo
     LEFT JOIN `dbt-analytics-392621`.`pos_lite_dbt`.`stg_channels` ch

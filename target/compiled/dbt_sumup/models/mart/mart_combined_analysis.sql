@@ -33,8 +33,8 @@ WITH combined_metrics AS (
         lf.cost_per_lead,
         lf.cost_per_deal,
         lf.ctr AS lead_ctr
-    FROM {{ ref('mart_web_orders') }} wo
-    FULL OUTER JOIN {{ ref('mart_leads_funnel') }} lf
+    FROM `dbt-analytics-392621`.`pos_lite_dbt`.`mart_web_orders` wo
+    FULL OUTER JOIN `dbt-analytics-392621`.`pos_lite_dbt`.`mart_leads_funnel` lf
       ON wo.activity_date = lf.activity_date
      AND wo.country_code = lf.country_code
      AND wo.campaign_id = lf.campaign_id
