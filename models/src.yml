@@ -4,8 +4,8 @@ sources:
   - name: raw_data
     tables:
       - name: channels
-        description: "Tabla con información de canales"
+        description: "Channel Information table"
       - name: leads_funnel
-        description: "Tabla con información de embudos de leads"
+        description: "Leads funnel table"
       - name: web_orders
-        description: "Tabla con información de órdenes web"
+        description: "Web Orders table"

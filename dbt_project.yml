@@ -17,3 +17,5 @@ models:
       +materialized: view
     mart:
       +materialized: table
+    reporting:
+      +materialized: table

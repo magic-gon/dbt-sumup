@@ -49,6 +49,9 @@
         -- Costo per POS deal
         SAFE_DIVIDE(total_spend, total_pos_lite_deals) AS cost_per_deal,
 
+        -- Cost per SQL
+        SAFE_DIVIDE(total_spend, total_sqls) AS cost_per_sql,
+
         -- Click Through Rate (CTR)
         SAFE_DIVIDE(total_clicks, total_impressions) * 100 AS ctr
     FROM `dbt-analytics-392621`.`pos_lite_dbt`.`stg_leads_funnel`

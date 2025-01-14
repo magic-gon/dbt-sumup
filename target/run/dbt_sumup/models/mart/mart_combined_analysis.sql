@@ -43,7 +43,11 @@
         lf.conversion_rate_pos_deals,
         lf.cost_per_lead,
         lf.cost_per_deal,
-        lf.ctr AS lead_ctr
+        lf.ctr AS lead_ctr,
+
+        -- Total combined cost
+        COALESCE(wo.total_spend_eur, 0) + COALESCE(lf.total_spend, 0) AS total_combined_spend
+        
     FROM `dbt-analytics-392621`.`pos_lite_dbt`.`mart_web_orders` wo
     FULL OUTER JOIN `dbt-analytics-392621`.`pos_lite_dbt`.`mart_leads_funnel` lf
       ON wo.activity_date = lf.activity_date
