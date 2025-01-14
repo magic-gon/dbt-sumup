@@ -38,6 +38,9 @@ WITH lead_metrics AS (
         -- Costo per POS deal
         SAFE_DIVIDE(total_spend, total_pos_lite_deals) AS cost_per_deal,
 
+        -- Cost per SQL
+        SAFE_DIVIDE(total_spend, total_sqls) AS cost_per_sql,
+
         -- Click Through Rate (CTR)
         SAFE_DIVIDE(total_clicks, total_impressions) * 100 AS ctr
     FROM {{ ref('stg_leads_funnel') }}

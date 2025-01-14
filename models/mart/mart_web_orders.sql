@@ -17,7 +17,15 @@ WITH web_order_metrics AS (
         SAFE_DIVIDE(wo.nb_of_signups, wo.nb_of_sessions) * 100 AS ctr,
         
         -- Costo per order
-        SAFE_DIVIDE(wo.total_spend_eur, wo.nb_of_orders) AS cost_per_order
+        SAFE_DIVIDE(wo.total_spend_eur, NULLIF(wo.nb_of_orders, 0)) AS cost_per_order,
+
+        -- Cost per session
+        SAFE_DIVIDE(wo.total_spend_eur, wo.nb_of_sessions) AS cost_per_session,
+
+        --Conversion rate fron sessions to orders
+        SAFE_DIVIDE(wo.nb_of_orders, wo.nb_of_sessions) * 100 AS conversion_rate_orders
+
+
     FROM {{ ref('stg_web_orders') }} wo
     LEFT JOIN {{ ref('stg_channels') }} ch
       ON wo.campaign_id = ch.campaign_id
