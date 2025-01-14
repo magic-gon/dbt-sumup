@@ -1,4 +1,15 @@
--- Modelo de reporting basado en el mart combinado
+
+  
+    
+
+    create or replace table `dbt-analytics-392621`.`pos_lite_dbt`.`rep_agg`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- Modelo de reporting basado en el mart combinado
 WITH aggregated_metrics AS (
     SELECT
         activity_date,
@@ -28,12 +39,12 @@ WITH aggregated_metrics AS (
         SUM(total_spend_eur) + SUM(lead_total_spend) AS total_combined_spend,
         
         -- Conversión final combinada de leads a órdenes
-        SAFE_DIVIDE(SUM(nb_of_orders), SUM(total_leads)) * 100 AS combined_conversion_rate,
+        SAFE_DIVIDE(SUM(total_orders), SUM(total_leads)) * 100 AS combined_conversion_rate,
         
         -- CTR combinado
         SAFE_DIVIDE(SUM(total_signups), SUM(total_sessions)) * 100 AS combined_ctr
         
-    FROM {{ ref('mart_combined_analysis') }}
+    FROM `dbt-analytics-392621`.`pos_lite_dbt`.`mart_combined_analysis`
     GROUP BY
         activity_date,
         country_code,
@@ -44,3 +55,5 @@ WITH aggregated_metrics AS (
 )
 
 SELECT * FROM aggregated_metrics
+    );
+  
