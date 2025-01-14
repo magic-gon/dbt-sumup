@@ -39,10 +39,10 @@ WITH aggregated_metrics AS (
         SUM(total_spend_eur) + SUM(lead_total_spend) AS total_combined_spend,
         
         -- Conversión final combinada de leads a órdenes
-        SAFE_DIVIDE(SUM(total_orders), SUM(total_leads)) * 100 AS combined_conversion_rate,
+        SAFE_DIVIDE(SUM(nb_of_orders), SUM(total_leads)) * 100 AS combined_conversion_rate,
         
         -- CTR combinado
-        SAFE_DIVIDE(SUM(total_signups), SUM(total_sessions)) * 100 AS combined_ctr
+        SAFE_DIVIDE(SUM(nb_of_signups), SUM(nb_of_sessions)) * 100 AS combined_ctr
         
     FROM `dbt-analytics-392621`.`pos_lite_dbt`.`mart_combined_analysis`
     GROUP BY

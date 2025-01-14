@@ -31,7 +31,7 @@ WITH aggregated_metrics AS (
         SAFE_DIVIDE(SUM(nb_of_orders), SUM(total_leads)) * 100 AS combined_conversion_rate,
         
         -- CTR combinado
-        SAFE_DIVIDE(SUM(total_signups), SUM(total_sessions)) * 100 AS combined_ctr
+        SAFE_DIVIDE(SUM(nb_of_signups), SUM(nb_of_sessions)) * 100 AS combined_ctr
         
     FROM {{ ref('mart_combined_analysis') }}
     GROUP BY
